@@ -1,19 +1,19 @@
 # Fdb version 3
-["bibtex tesi"] 1631280032 "tesi.aux" "tesi.bbl" "tesi" 1631280045
+["bibtex tesi"] 1631282790 "tesi.aux" "tesi.bbl" "tesi" 1631282794
   "D:/Program Files/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291867944 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
   "bibliografia.bib" 0 -1 0 ""
-  "tesi.aux" 1631280043 4160 5eeb1be5a86a8cd7b8984b1489419800 "pdflatex"
+  "tesi.aux" 1631282793 4156 62775da6e8de46c4fc03da7b6357221a "pdflatex"
   (generated)
   "tesi.blg"
   "tesi.bbl"
-["pdflatex"] 1631280032 "c:/Users/franc/brain-tumor-classification/Latex/tesi.tex" "tesi.pdf" "tesi" 1631280045
+["pdflatex"] 1631282790 "c:/Users/franc/brain-tumor-classification/Latex/tesi.tex" "tesi.pdf" "tesi" 1631282794
   "C:/Users/franc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1629401500 10249209 3d5fb1080324f77aecb36a4abe069eaf ""
   "C:/Users/franc/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1629401492 85981 2661928f208bc786bf1201d9cd7ddf8d ""
   "Capitoli/ch1.tex" 1631262633 111 7668793defe701e4b07f83db38e22348 ""
   "Capitoli/ch2.tex" 1631262633 207 5f56033b581f79a822048bcdf94dbc73 ""
-  "Capitoli/ch3.tex" 1631263299 165 bd6442fd682be88dac56b84d751bf561 ""
+  "Capitoli/ch3.tex" 1631282708 142 b0c426ff6bdfae801ea696a02aaa588f ""
   "Capitoli/ch4.tex" 1631263709 46 6b4172794015592d163c4190a552311a ""
-  "Capitoli/ch5.tex" 1631263868 104 2a3378e5f248b200d981eb93241f00e4 ""
+  "Capitoli/ch5.tex" 1631282785 132 40eee7ed68e91c0b6dd5bdddeef650a8 ""
   "Capitoli/ch6.tex" 1631092876 0 d41d8cd98f00b204e9800998ecf8427e ""
   "D:/Program Files/MiKTeX/fonts/enc/dvips/crimson/crm_qrsm2e.enc" 1455870494 2863 8dc27828e55d2dfec76dd1e70539b7e3 ""
   "D:/Program Files/MiKTeX/fonts/enc/dvips/crimson/crm_wttfgh.enc" 1455870496 2870 655fc4f75e665b45530541aa748c588e ""
@@ -189,15 +189,15 @@
   "figures/logounipg2021.png" 1630941923 223395 fb06bb0cda706b42b0a3bfed5a1ca5b4 ""
   "json-lang.tex" 0 -1 0 ""
   "solidity-highlighting.tex" 1630941922 2764 d0a105641ca2afb3968e64c79a7bc79b ""
-  "tesi.aux" 1631280043 4160 5eeb1be5a86a8cd7b8984b1489419800 "pdflatex"
+  "tesi.aux" 1631282793 4156 62775da6e8de46c4fc03da7b6357221a "pdflatex"
   "tesi.bbl" 0 -1 0 "bibtex tesi"
-  "tesi.out" 1631280043 1488 8898aba5c112816eaa135432079078e2 "pdflatex"
+  "tesi.out" 1631282793 1487 ea581c1b0342ef9fdd4ef183685e1a61 "pdflatex"
   "tesi.tex" 1631280014 6460 a09d04d4f6b690acbafe453bee5ba46b ""
-  "tesi.toc" 1631280043 1901 b7f3349eb960fa3995e0844616448704 "pdflatex"
+  "tesi.toc" 1631282793 1897 c8c14fa71e0abb124ed69f2a5dc3f512 "pdflatex"
   (generated)
-  "tesi.out"
   "tesi.aux"
-  "tesi.toc"
-  "json-lang.aux"
   "tesi.pdf"
+  "json-lang.aux"
   "tesi.log"
+  "tesi.toc"
+  "tesi.out"

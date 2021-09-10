@@ -10,14 +10,14 @@
 \BOOKMARK [1][-]{section.3.1}{Funzionamento generale}{chapter.3}% 10
 \BOOKMARK [1][-]{section.3.2}{Convoluzione e Convoluzione2D}{chapter.3}% 11
 \BOOKMARK [2][-]{subsection.3.2.1}{Convoluzione}{section.3.2}% 12
-\BOOKMARK [2][-]{subsection.3.2.2}{ReLU layer}{section.3.2}% 13
-\BOOKMARK [2][-]{subsection.3.2.3}{Strati di subsampling}{section.3.2}% 14
-\BOOKMARK [0][-]{chapter.4}{Ambiente di lavoro}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Python}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Tensorflow e Keras}{chapter.4}% 17
-\BOOKMARK [0][-]{chapter.5}{Implementazione della rete e prove sperimentali}{}% 18
-\BOOKMARK [1][-]{section.5.1}{Obiettivo}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.2}{Preparazione dell'ambiente}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.3}{Una prima forma di modello semplice}{chapter.5}% 21
+\BOOKMARK [2][-]{subsection.3.2.2}{Strati di subsampling}{section.3.2}% 13
+\BOOKMARK [0][-]{chapter.4}{Ambiente di lavoro}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Python}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Tensorflow e Keras}{chapter.4}% 16
+\BOOKMARK [0][-]{chapter.5}{Implementazione della rete e prove sperimentali}{}% 17
+\BOOKMARK [1][-]{section.5.1}{Obiettivo}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.2}{Preparazione dell'ambiente}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.3}{Brain Tumor Classification Dataset}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.4}{Pneumonia Dataset}{chapter.5}% 21
 \BOOKMARK [0][-]{chapter.6}{Conclusioni}{}% 22
 \BOOKMARK [0][-]{chapter.7}{Codice}{}% 23

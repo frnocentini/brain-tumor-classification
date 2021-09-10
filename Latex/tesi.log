@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.8.19)  10 SEP 2021 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.8.19)  10 SEP 2021 16:06
 entering extended mode
 **c:/Users/franc/brain-tumor-classification/Latex/tesi.tex
 (c:/Users/franc/brain-tumor-classification/Latex/tesi.tex
@@ -790,18 +790,18 @@ No file tesi.bbl.
 
 ] (tesi.aux)
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 8898ABA5C112816EAA135432079078E2;1488.
+(rerunfilecheck)             Checksum: EA581C1B0342EF9FDD4EF183685E1A61;1487.
  ) 
 Here is how much of TeX's memory you used:
  22726 strings out of 480236
- 434010 string characters out of 2890434
+ 434000 string characters out of 2890434
  838405 words of memory out of 3000000
  38772 multiletter control sequences out of 15000+200000
  567942 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,11n,99p,1080b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Program Files/MiKTeX/fonts/enc/dvips/crimson/crm_wttfgh.enc}{D:/Program Files/MiKTeX/fonts/enc/dvips/crimson/crm_qrsm2e.enc}<D:/Program Files/MiKTeX/fonts/type1/kosch/crimson/Crimson-Bold.pfb><D:/Program Files/MiKTeX/fonts/type1/kosch/crimson/Crimson-Italic.pfb><D:/Program Files/MiKTeX/fonts/type1/kosch/crimson/Crimson-Roman.pfb>
-Output written on tesi.pdf (11 pages, 350172 bytes).
+Output written on tesi.pdf (11 pages, 350629 bytes).
 PDF statistics:
  195 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)

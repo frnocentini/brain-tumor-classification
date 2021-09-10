@@ -12,14 +12,14 @@
 \contentsline {section}{\numberline {3.1}Funzionamento generale}{6}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Convoluzione e Convoluzione2D}{6}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Convoluzione}{6}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}ReLU layer}{6}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Strati di subsampling}{6}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.2}Strati di subsampling}{6}{subsection.3.2.2}%
 \contentsline {chapter}{\numberline {4}Ambiente di lavoro}{7}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Python}{7}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Tensorflow e Keras}{7}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Implementazione della rete e prove sperimentali}{8}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Obiettivo}{8}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Preparazione dell'ambiente}{8}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Una prima forma di modello semplice}{8}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Brain Tumor Classification Dataset}{8}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Pneumonia Dataset}{8}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Conclusioni}{9}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Codice}{10}{chapter.7}%
