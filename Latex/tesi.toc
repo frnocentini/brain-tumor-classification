@@ -1,0 +1,25 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {chapter}{\numberline {1}Introduzione}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Machine learning e le reti neurali}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}L'importanza dell'apprendimento}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Deep Learning}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Neuroni Artificiali}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Addestramento di una rete}{4}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Overfitting e underfitting}{4}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Classificazione}{4}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Reti neurali convoluzionali}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Funzionamento generale}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Convoluzione e Convoluzione2D}{5}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Convoluzione}{5}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}ReLU layer}{5}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Strati di subsampling}{5}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Ambiente di lavoro}{6}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Python}{6}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tensorflow e Keras}{6}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Implementazione della rete e prove sperimentali}{7}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Obiettivo}{7}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Preparazione dell'ambiente}{7}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Una prima forma di modello semplice}{7}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{8}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Codice}{9}{chapter.7}%
