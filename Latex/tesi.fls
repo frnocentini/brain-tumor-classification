@@ -1,6 +1,6 @@
-PWD c:\Users\franc\Desktop\terzo anno\tesi
+PWD c:\Users\franc\brain-tumor-classification\Latex
 INPUT C:\Users\franc\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\franc\Desktop\terzo anno\tesi\tesi.tex
+INPUT c:\Users\franc\brain-tumor-classification\Latex\tesi.tex
 OUTPUT tesi.log
 INPUT D:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT D:\Program Files\MiKTeX\tex\latex\base\report.cls
@@ -11,10 +11,11 @@ INPUT D:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT D:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT D:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT D:\Program Files\MiKTeX\tex\latex\base\report.cls
-INPUT D:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT D:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT D:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT D:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT D:\Program Files\MiKTeX\tex\latex\base\size12.clo
+INPUT D:\Program Files\MiKTeX\tex\latex\base\size12.clo
+INPUT D:\Program Files\MiKTeX\tex\latex\base\size12.clo
+INPUT D:\Program Files\MiKTeX\tex\latex\base\size12.clo
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT D:\Program Files\MiKTeX\tex\generic\babel\babel.sty
 INPUT D:\Program Files\MiKTeX\tex\generic\babel\babel.sty
 INPUT D:\Program Files\MiKTeX\tex\generic\babel\babel.sty
@@ -851,7 +852,16 @@ INPUT .\tesi.toc
 INPUT tesi.toc
 INPUT tesi.toc
 INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Bold-tlf-ot1.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 OUTPUT tesi.toc
+INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Italic-tlf-ot1.tfm
 INPUT .\Capitoli\ch1.tex
 INPUT .\Capitoli\ch1.tex
 INPUT .\Capitoli\ch1.tex

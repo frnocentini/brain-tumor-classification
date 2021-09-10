@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.8.19)  10 SEP 2021 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.8.19)  10 SEP 2021 15:20
 entering extended mode
-**"c:/Users/franc/Desktop/terzo anno/tesi/tesi.tex"
-("c:/Users/franc/Desktop/terzo anno/tesi/tesi.tex"
+**c:/Users/franc/brain-tumor-classification/Latex/tesi.tex
+(c:/Users/franc/brain-tumor-classification/Latex/tesi.tex
 LaTeX2e <2020-10-01> patch level 1
 L3 programming layer <2020-10-05> xparse <2020-03-03> ("D:\Program Files\MiKTeX\tex/latex/base\report.cls"
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
-("D:\Program Files\MiKTeX\tex/latex/base\size10.clo"
-File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+("D:\Program Files\MiKTeX\tex/latex/base\size12.clo"
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count175
 \c@chapter=\count176
@@ -584,7 +584,7 @@ LaTeX Font Info:    Trying to load font information for OT1+Crimson-TLF on input
 File: OT1Crimson-TLF.fd 2016/02/19 (autoinst) Font definitions for OT1/Crimson-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 133.
+(Font)              scaled to size 12.0pt on input line 133.
  (tesi.aux)
 \openout1 = `tesi.aux'.
 
@@ -634,12 +634,12 @@ italian.ldf    on input line 133.
 * \topmargin=-7.86334pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -696,15 +696,15 @@ Package caption Info: End \AtBeginDocument code.
 \c@mv@boldtabular=\count324
 \c@lstlisting=\count325
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 141.
+(Font)              scaled to size 17.28pt on input line 141.
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/n' will be
 (Font)              scaled to size 21.8pt on input line 146.
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/b/n' will be
 (Font)              scaled to size 21.8pt on input line 146.
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 154.
+(Font)              scaled to size 14.4pt on input line 154.
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 154.
+(Font)              scaled to size 14.4pt on input line 154.
 <figures/logounipg2021.png, id=98, 523.7166pt x 255.5949pt>
 File: figures/logounipg2021.png Graphic file (type png)
 <use figures/logounipg2021.png>
@@ -728,68 +728,82 @@ LaTeX Font Info:    Font shape `OT1/Crimson-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 181.
  (tesi.toc
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 3.
+(Font)              scaled to size 12.0pt on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
+(Font)              <12> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
-)
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+ [2
+
+])
 \tf@toc=\write5
 \openout5 = `tesi.toc'.
 
- [2
+LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/sl' in size <12> not available
+(Font)              Font shape `OT1/Crimson-TLF/m/it' tried instead on input line 188.
+LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 188.
 
-]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3]
 Capitolo 1.
-(Capitoli/ch1.tex) [3
+(Capitoli/ch1.tex) [4
 
 ]
 Capitolo 2.
 (Capitoli/ch2.tex
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 1.
-) [4
+(Font)              scaled to size 17.28pt on input line 1.
+) [5
 
 ]
 Capitolo 3.
 (Capitoli/ch3.tex
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 3.
-) [5
+(Font)              scaled to size 14.4pt on input line 3.
+) [6
 
 ]
 Capitolo 4.
-(Capitoli/ch4.tex) [6
+(Capitoli/ch4.tex) [7
 
 ]
 Capitolo 5.
-(Capitoli/ch5.tex) [7
+(Capitoli/ch5.tex) [8
 
 ]
 Capitolo 6.
-(Capitoli/ch6.tex) [8
+(Capitoli/ch6.tex) [9
 
 ]
 Capitolo 7.
 No file tesi.bbl.
-[9
+[10
 
 ] (tesi.aux)
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 8898ABA5C112816EAA135432079078E2;1488.
  ) 
 Here is how much of TeX's memory you used:
- 22705 strings out of 480236
- 433590 string characters out of 2890434
- 838388 words of memory out of 3000000
- 38760 multiletter control sequences out of 15000+200000
- 562989 words of font info for 41 fonts, out of 3000000 for 9000
+ 22726 strings out of 480236
+ 434010 string characters out of 2890434
+ 838405 words of memory out of 3000000
+ 38772 multiletter control sequences out of 15000+200000
+ 567942 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,5n,99p,1073b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 89i,11n,99p,1080b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Program Files/MiKTeX/fonts/enc/dvips/crimson/crm_wttfgh.enc}{D:/Program Files/MiKTeX/fonts/enc/dvips/crimson/crm_qrsm2e.enc}<D:/Program Files/MiKTeX/fonts/type1/kosch/crimson/Crimson-Bold.pfb><D:/Program Files/MiKTeX/fonts/type1/kosch/crimson/Crimson-Italic.pfb><D:/Program Files/MiKTeX/fonts/type1/kosch/crimson/Crimson-Roman.pfb>
-Output written on tesi.pdf (10 pages, 348108 bytes).
+Output written on tesi.pdf (11 pages, 350172 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
  202 words of extra memory for PDF output out of 10000 (max. 10000000)
 
