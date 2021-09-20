@@ -89,18 +89,7 @@ generanti ognuna una feature map di pooling, per gli ultimi 2 sono stati invece 
 così da produrre 64 feature maps anch’esse seguite da un’operazione di pooling. La convoluzione è stata performata
  con dei kernel di dimensione 3x3 e con una funzione di attivazione non lineare, cioè la ReLu. Nel capitolo precedente
   è stato indicato in parte il perchè questo tipo di funzione è quella maggiormente utilizzata in ambito di
-   classificazione d’immagine, in quanto risolve in parte il problema della scomparsa del gradiente, uno dei 
-   principali problemi del deep learning. Durante la fase di backpropagation i pesi degli strati in
-    prossimità dell’input restano costanti o si aggiornano molto lentamente al contrario di quanto 
-    accade per gli strati vicini all’output. Questo può provocare un rallentamento della rete ed è dovuto 
-    alle funzioni di attivazione. Funzioni di attivazione come la sigmoide infatti sono funzioni a codominio
-     limitato e hanno una derivata
-      che presenta una regione di significatività piuttosto piccola, oltre la quale il valore della derivata stessa
-       è molto piccolo. Per la regola della catena nella fase di backpropagation è necessario andare a fare un
-        prodotto di derivate che è pari al numero di strati della rete neurale. A mano a mano che però si torna 
-        indietro dall’output verso l’input però, moltiplicando valori molto vicini allo zero tra di loro si
-         ottengono valori di aggiornamento dei pesi infinitesimi che comportano l'impossibilità per la rete
-          di aggiornare i pesi correttamente, soprattutto quando si vanno ad utilizzare reti con più di due strati, e quindi quelle tipiche del deep learning.
+   classificazione d’immagine. 
            L'operazione di Max-pooling viene fatta con delle pool di dimensione
            2x2. Lo stride è stato lasciato quello di default a 1 e il padding scelto è il ‘same’, affinchè la
             dimensione dell’input sia uguale alla dimensione dell’output. 
@@ -217,7 +206,7 @@ Tramite l’utilizzo della classe di Keras  \lstinline{ImageDataGenerator()} è 
    di image processing. Questa mancanza può essere pertanto colmata andando ad ampliare il dataset con immagini
     che possano arricchire l’esperienza di training del modello. Tali immagini possono essere modificate in vari
      modi, ma non tutti questi sono utili nel caso di interesse: infatti alcune tecniche possono generare rumore 
-     aggiuntivo e ‘’confondere’’ il sistema nella ricerca dei pattern per la rilevazione della polmonite.
+     aggiuntivo e ''confondere'' il sistema nella ricerca dei pattern per la rilevazione della polmonite.
      Infatti è differente classificare immagini biomedicali come i raggi
      X per capire se vi è o meno una polmonite rispetto ad una classificazione di immagini come quelli di 
      cani o di gatti. Infatti, mentre un gatto può essere visto da varie angolazioni e ciò può essere
@@ -295,7 +284,7 @@ In questo caso il modello è stato allenato sull’insieme di training e validat
       \caption{}
       \label{fig:snap2}
     \end{subfigure}%
-    \caption{In entrambe le figure è possibile osservare la curva ROC sul training e sul set di validation. Lo scopo è quello che la curva arancione tenda ad un gradino di ampiezza unitaria.}
+    \caption{In entrambe le figure è possibile osservare le curve che rappresentano accuracy e loss rispettivamente per training e sul set di validation.}
     \label{fig:fig}
 \end{figure} 
 Alla fine si ottengono questi risultati andando a richiamare \lstinline{cnn.evaluate(test)}:

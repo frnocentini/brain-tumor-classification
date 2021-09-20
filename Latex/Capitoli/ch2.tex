@@ -129,7 +129,9 @@ Lo stato del neurone numero j al passo t è identificato come:
 
 
 Ricevuti in ingresso N stati \(s_j(t)\), il neurone numero i calcola 
-\[s_i(t+1)= sgn(\sum_{j=1}^{N}w_{ij}s_j(t)-\theta_i)= sgn(b_i(t))      [1]\]
+\begin{equation} \label{1}
+s_i(t+1)= sgn(\sum_{j=1}^{N}w_{ij}s_j(t)-\theta_i)= sgn(b_i(t))
+\end{equation}
 
 Infatti, dato un neurone avente N canali di ingresso \(s_1\), ···, \(s_N\) ad ognuno dei quali
 è associato un peso \(w_ij\), il cui primo indice i si riferisce al neurone che fa il calcolo,
@@ -177,13 +179,17 @@ Una rete neurale di dice stratificata quando è formata da vari strati di neuron
 tali che ognuno di loro sia connesso con quelli dello strato successivo, ma senza che ci 
 siano connessioni tra neuroni del medesimo strato. 
 Il neurone pensato da Mc-Culloghs è chiamato anche Percettrone e possiede solamente 
-uno strato di input e uno strato di output.
-Di solito si lavora con reti in cui vi sono uno o più hidden layers, 
+i solito si lavora con reti in cui vi sono uno o più hidden layers, 
 i quali non comunicano direttamente con l’esterno. Queste reti sono chiamate MPL (Multi-Layer-Perceptron). 
+uno strato di input e uno strato di output.
+Una rete neurale artificiale in cui per ogni strato il segnale di ingresso viaggia
+sempre in avanti dall’ingresso all’uscita, senza creazione di cicli, si chiama \emph{feedforward}. \\
 
+D
 Il primo vero miglioramento rispetto al Perceptron è stato l’Adaline (ADAptive LInear NEuron), 
 in quanto utilizza proprio una funzione di attivazione lineare per regolare il vettore 
 dei pesi al posto della funzione a gradino. \\
+
 
 L'\emph{apprendimento profondo}, in inglese Deep Learning (DL) è quel campo di ricerca del ML 
 e dell'Intelligenza Artificiale che studia le tecniche e i sistemi per consentire alle macchine 
@@ -208,9 +214,8 @@ di apprendere in autonomia in modo profondo. Nello specifico, questa branca vien
           stimare una funzione arbitraria con un dato livello di accuratezza
            cresce esponenzialmente rispetto al numero di variabili di input
             (cioè dimensionalità) della funzione.
-       All’aumentare del numero dei dati aumenta anche il numero delle \emph{features} e cresce 
-       esponenzialmente, come già detto precedentemente, il numero degli esempi necessari per allenare
-       il sistema. Però all’aumentare delle feature diminuisce anche la capacità predittiva del
+       All’aumentare del numero dei dati aumenta anche il numero delle \emph{features}, ma
+        all’aumentare delle features diminuisce anche la capacità predittiva del
        sistema con un conseguente peggioramento delle prestazioni.
        Come già detto nel precedente capitolo, con i metodi convenzionali di machine learning
        bisogna costruire gli estrattori delle feature dei dati di input. L’accuratezza e la precisione
@@ -227,13 +232,39 @@ Un’organizzazione gerarchica dei dati permette di condividere e riutilizzare i
     su un solo strato e attenuando l’ingente utilizzo di memoria che comporterebbe una 
     struttura meno profonda. \\ 
     In generale le tecniche di deep learning stanno diventando sempre più utili a
-    nche in quello che è il campo della computer visioncomputer vision, 
+    nche in quello che è il campo della computer vision, 
     cioè l'area di studio delle AI che si occupa della ricerca aull' automatizzazione 
     dell'informazione visuale, e in particolare anche dell'analisi di dati biomedici,
-     come nel caso del presente lavoro di tesi.
-
-
-
+     come nel caso del presente lavoro di tesi.\\
+    
+     Le Deep Feedforward Networks, chiamate anche multilayer perceptrons (MLPs), sono degli
+     strumenti molto importanti usati nel deep learning. L’obiettivo delle MLPs è approssimare
+     una funzione $f^{*}$. Ad esempio, se si vuol costruire un classificatore, y = $f^{x}$ esegue una mappatura
+     dell’input x su una categoria y. Una rete di tipo feedforward definisce una mappatura 
+     y = f (x, \(\theta\)) e cerca il parametro \(theta\) che renda migliore l’approssimazione
+      della funzione.
+     Questi modelli sono chiamati feedforward perché l’informazione fluisce prima attraverso
+     la funzione che deve valutare x, poi lungo le elaborazioni intermedie usate per definire f
+     fino all’output y. 
+     Questo tipo di reti sono di solito rappresentate dalla composizione di più funzioni. Per
+esempio, possono essere formate da tre funzioni $f^{1}$, $f^{2}$ e $f^{3}$ connesse da una catena:
+ $$f(x) = f^{3}(f^{2}(f^{1}(x)))$$
+n questo caso $f^{1}$ sarà chiamato primo strato (first layer), $f^{2}$ secondo strato e così via.
+La lunghezza della catena indica la \emph{profondità} del modello. Lo strato finale della rete è
+chiamato strato di output. Durante l’addestramento della rete si cerca di approssimare 
+$f (x)$ ad una funzione $f^{*}(x)$ valutata su differenti esempi di addestramento. \\
+Gli esempi usati durante l’addestramento specificano direttamente cosa deve fare lo strato
+di output ad ogni punto x: deve produrre un valore il più vicino possibile alla label di target y. Il 
+comportamento degli altri strati non è direttamente specificato dai dati di addestramento;
+l’algoritmo di apprendimento deve decidere come usarli per produrre l’output desiderato
+per implementare al meglio una approssimazione di $f^{*}$. Siccome i dati di addestramento 
+non mostrano l’output desiderato per ognuno di questi strati vengono chiamati \emph{strati
+nascosti}. La dimensione degli strati nascosti determina la larghezza del modello.
+Lo strato rappresenta una funzione a valori vettoriali formata da molte \emph{unità} che agiscono in
+parallelo, ognuna rappresentante una funzione a valori vettoriali che restituisce un valore
+scalare. Ogni unità è assimilabile ad un neurone nel senso che essa riceve l’input da altre
+unità ed elabora un output che verrà mandato a sua volta come input ad altre unità, il
+valore di output viene chiamato valore di attivazione, che è analogo a quello delle reti neurali non profonde. 
 \section{Addestramento di una rete}
 
 Come è stato già detto in precedenza, il punto di partenza per l’addestramento in generale, ma ancora di più per addestrare una rete neurale, 
@@ -259,7 +290,9 @@ vettore di risultati. Bisogna calcolare una funzione che misuri l’errore (o la
  dati nell’apprendimento supervisionato.
   La funzione che ci permette di farlo è chiamata \emph{funzione errore} o di perdita.
    Una delle funzioni di errore utilizzata nell’apprendimento supervisionato è la MSE (Mean Squared Error):
-\[MSE = \frac{1}{2}\sum (out - target)^{2}.        [2]\]
+   \begin{equation} \label{2}
+MSE = \frac{1}{2}\sum (out - target)^{2}
+   \end{equation}
  Nel deep leaning è molto utilizzata \emph{funzione di entropia incrociata}, 
 funzione di perdita che è usata per quantificare la differenza tra due distribuzioni di probabilità:
  quella che vorremmo il nostro sistema raggiungesse, e quella che il nostro sistema ha elaborato statisticamente
@@ -281,7 +314,7 @@ i pesi vengono incrementati di una quantità infinitesima. Il vettore gradiente,
 l’errore di stima dell'output è minore in media.\\
 L’approccio più utilizzato al fine di minimizzare l’errore è la procedura chiamata \emph{gradiente stocastico 
 decrescente}. Esso consiste nel mandare in input alla rete alcuni esempi,
-calcolandone l’output con la [1], l’errore associato (ad esempio con la [2]) e il gradiente medio
+calcolandone l’output con la (2.1), l’errore associato (ad esempio con la (2.1)) e il gradiente medio
 di questa ultima variando i pesi in maniera infinitesima. La procedura è
 iterata per molti set piccoli di esempi presi dall’insieme di addestramento finchè la media
 della funzione oggetto non smette di decrescere. Si parla di gradiente stocastico perchè ogni piccolo
@@ -294,12 +327,17 @@ per un semplice percettrone.
  ogni iterazione nella direzione indicata dal gradiente. 
 \item Si calcola la funzione di costo con i parametri attuali;
 \item Si aggiornano i valori dei pesi usando la funzione di aggiornamento dei pesi W che è:
-\[ W^{()\rho)} = W^{(\rho -1)} - \eta \frac{\partial E}{\partial W}\]
-dove \(\rho\) indica il valore dei pesi al passo precedente.
+ \begin{equation} \label{3}
+W^{(\rho)} = W^{(\rho -1)} - \eta \frac{\partial E}{\partial W}
+\end{equation}
+dove \(\rho\) indica il valore dei pesi al passo precedente e \(\eta\) il learining rate.
 \item Alla fine l'algoritmo ritorna il costo minimizzato per la funzione di errore. \\
+
 Occorre dunque vedere come il valore dei pesi ha effetto sulla funzione di errore.
  Si applica la regola della catena di derivazione:\\
+
 \[\frac{\partial E}{\partial W}  = \frac{\partial E}{\partial out}  \frac{\partial out}{\partial in}  \frac{\partial in}{\partial W} \] \\
+
 dove \emph{in} è la funzione che è combinazione lineare di input e pesi, 
 mentre \emph{out} è l’output che si ottiene facendo passare \emph{in} per la funzione di attivazione,
  per esempio la sigmoide.
@@ -310,29 +348,28 @@ Se si vanno a valutare le nostre derivate per il caso del percettrone, si può f
 \[\frac{\partial E}{\partial out} = (out - target),\]
 \[\frac{\partial out}{\partial in} = out(1-out),\]
 \[\frac{\partial in}{\partial W} = in \]
-Si moltiplicando tra loro dunque tutti i termini derivativi e poi si applicano all’equazione principale 
-e si aggiornano i valori dei pesi di conseguenza, fintanto che la media dell’errore non smette
+Si moltiplicano tra loro dunque tutti i termini derivativi e poi si applicano all’equazione principale (2.3) 
+e si aggiornano i valori dei pesi di conseguenza, fintanto che la media dell’errore converge, ovvero smette
  di decrescere. 
+\end{enumerate}
 Tale algoritmo nelle prove sperimentali ha effettiva realizzazione in quello che è chiamato l’\emph{ottimizzatore}
  (uno dei più è efficienti è proprio SGD (Stochastic Gradient Descent), ma vi sono anche Adam, ADAline... 
  Tutti però seguono l’idea di base del gradiente discendente.\\ 
  Infine terminata questa procedura si passa alle valutazioni sulla performance della rete;
   essa viene misurata con gli esempi dell’insieme di test, che serve a testare la capacità di 
   generalizzazione della rete.
-\end{enumerate}
+
  Il metodo migliore per minimizzare la funzione di errore è proprio quello di usare il gradiente.
  Nelle reti MLP (Multi-Layer-Perceptron) si effettuano una serie di derivate successive e
   ogni volta si trova il punto che annulla la derivata della funzione di errore. Questo procedimento è 
   piuttosto semplice nelle reti neurali più basilari, mentre inizia ad essere più complicato
    nelle reti neurali con più strati. In questo caso si gioca sul valore del learning rate.
    Un valore del learning rate (di solito compreso tra 0 e 1) troppo alto farà fare un
-    salto troppo grande verso il minimo, 
+    salto troppo grande verso il minimo della funzoione di costo, 
    facendo perdere alla rete capacità di generalizzazione mentre un learning rate troppo basso rallenta
-    notevolmente il training e può comportare il fatto che l'algoritmo 
-    calcoli un minimo locale indesiderato per la funzione di errore. \\
+    notevolmente il training e può comportare il fatto che l'algoritmo rimanga fermo nel 
+    calcolo di un minimo locale indesiderato per la funzione di errore. \\
    
-Una rete neurale artificiale in cui per ogni strato il segnale di ingresso viaggia
- sempre in avanti dall’ingresso all’uscita, senza creazione di cicli, si chiama feedforward. \\
 
 Dunque, il ciclo di apprendimento di una rete neurale feedforward può essere sintetizzato in due fasi:
 \begin{itemize}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.8.19)  20 SEP 2021 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.8.19)  20 SEP 2021 17:18
 entering extended mode
 **c:/Users/franc/brain-tumor-classification/Latex/tesi.tex
 (c:/Users/franc/brain-tumor-classification/Latex/tesi.tex
@@ -908,7 +908,7 @@ LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 91.
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/it' will be
 (Font)              scaled to size 14.4pt on input line 91.
-<figures/logounipg2021.png, id=106, 523.7166pt x 255.5949pt>
+<figures/logounipg2021.png, id=134, 523.7166pt x 255.5949pt>
 File: figures/logounipg2021.png Graphic file (type png)
 <use figures/logounipg2021.png>
 Package pdftex.def Info: figures/logounipg2021.png  used on input line 105.
@@ -1072,7 +1072,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17]
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 454.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18]
+
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 491.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1081,7 +1089,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18])
+[19])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1089,39 +1097,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]
+[20]
 Capitolo 3.
-[20
+(Capitoli/ch3.tex [21
 
 ]
-Capitolo 4.
-(Capitoli/ch4.tex) [21
-
-]
-Capitolo 5.
-(Capitoli/ch5.tex
 LaTeX Font Info:    Font shape `OT1/Crimson-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 8.
-<figures//san.jpeg, id=251, 2013.5225pt x 1466.47874pt>
-File: figures//san.jpeg Graphic file (type jpg)
-<use figures//san.jpeg>
-Package pdftex.def Info: figures//san.jpeg  used on input line 19.
-(pdftex.def)             Requested size: 127.15161pt x 92.59451pt.
-LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 21.
-<figures//bacteria.jpeg, id=252, 955.57pt x 562.1pt>
-File: figures//bacteria.jpeg Graphic file (type jpg)
-<use figures//bacteria.jpeg>
-Package pdftex.def Info: figures//bacteria.jpeg  used on input line 26.
-(pdftex.def)             Requested size: 127.15161pt x 74.79095pt.
-<figures//virus.jpeg, id=253, 955.57pt x 666.49pt>
-File: figures//virus.jpeg Graphic file (type jpg)
-<use figures//virus.jpeg>
-Package pdftex.def Info: figures//virus.jpeg  used on input line 33.
-(pdftex.def)             Requested size: 127.15161pt x 88.6807pt.
- [22
+(Font)              scaled to size 14.4pt on input line 34.
 
-]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1129,7 +1112,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23 <./figures//san.jpeg> <./figures//bacteria.jpeg> <./figures//virus.jpeg>]
+[22]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1161,14 +1152,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27] ("D:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty"
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-
-Package Listings Warning: Text dropped after begin of listing on input line 133.
-
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 148.
+[27])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1177,7 +1161,68 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 152.
+Capitolo 4.
+(Capitoli/ch4.tex) [29
+
+]
+Capitolo 5.
+(Capitoli/ch5.tex
+<figures//san.jpeg, id=326, 2013.5225pt x 1466.47874pt>
+File: figures//san.jpeg Graphic file (type jpg)
+<use figures//san.jpeg>
+Package pdftex.def Info: figures//san.jpeg  used on input line 19.
+(pdftex.def)             Requested size: 127.15161pt x 92.59451pt.
+LaTeX Font Info:    Font shape `OT1/Crimson-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 21.
+<figures//bacteria.jpeg, id=327, 955.57pt x 562.1pt>
+File: figures//bacteria.jpeg Graphic file (type jpg)
+<use figures//bacteria.jpeg>
+Package pdftex.def Info: figures//bacteria.jpeg  used on input line 26.
+(pdftex.def)             Requested size: 127.15161pt x 74.79095pt.
+<figures//virus.jpeg, id=328, 955.57pt x 666.49pt>
+File: figures//virus.jpeg Graphic file (type jpg)
+<use figures//virus.jpeg>
+Package pdftex.def Info: figures//virus.jpeg  used on input line 33.
+(pdftex.def)             Requested size: 127.15161pt x 88.6807pt.
+ [30
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31 <./figures//san.jpeg> <./figures//bacteria.jpeg> <./figures//virus.jpeg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34] ("D:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+
+Package Listings Warning: Text dropped after begin of listing on input line 122.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1186,13 +1231,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29]
-Overfull \hbox (38.69655pt too wide) in paragraph at lines 197--197
+[35]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 137.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 141.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[36]
+Overfull \hbox (38.69655pt too wide) in paragraph at lines 186--186
 [][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (41.12173pt too wide) in paragraph at lines 197--197
+Overfull \hbox (41.12173pt too wide) in paragraph at lines 186--186
 [][][][][][][][][][][][][][][]\OT1/Crimson-TLF/m/n/12 .
  []
 
@@ -1203,7 +1260,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30]
+[37]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1211,11 +1268,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31]
-<Figures/best-augmented-images-pneumonia.png, id=357, 859.21pt x 536.0025pt>
+[38]
+<Figures/best-augmented-images-pneumonia.png, id=428, 859.21pt x 536.0025pt>
 File: Figures/best-augmented-images-pneumonia.png Graphic file (type png)
 <use Figures/best-augmented-images-pneumonia.png>
-Package pdftex.def Info: Figures/best-augmented-images-pneumonia.png  used on input line 254.
+Package pdftex.def Info: Figures/best-augmented-images-pneumonia.png  used on input line 243.
 (pdftex.def)             Requested size: 376.42575pt x 234.82767pt.
 
 
@@ -1225,19 +1282,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32]
-<Figures/history-pneumonia-no-aug.png, id=362, 373.395pt x 248.93pt>
+[39]
+<Figures/history-pneumonia-no-aug.png, id=433, 373.395pt x 248.93pt>
 File: Figures/history-pneumonia-no-aug.png Graphic file (type png)
 <use Figures/history-pneumonia-no-aug.png>
-Package pdftex.def Info: Figures/history-pneumonia-no-aug.png  used on input line 286.
+Package pdftex.def Info: Figures/history-pneumonia-no-aug.png  used on input line 275.
 (pdftex.def)             Requested size: 218.53804pt x 145.68993pt.
-<Figures/history-pneumonia-aug.png, id=363, 373.395pt x 250.9375pt>
+<Figures/history-pneumonia-aug.png, id=434, 373.395pt x 250.9375pt>
 File: Figures/history-pneumonia-aug.png Graphic file (type png)
 <use Figures/history-pneumonia-aug.png>
-Package pdftex.def Info: Figures/history-pneumonia-aug.png  used on input line 293.
+Package pdftex.def Info: Figures/history-pneumonia-aug.png  used on input line 282.
 (pdftex.def)             Requested size: 218.53804pt x 146.86484pt.
 
-Overfull \hbox (41.8279pt too wide) in paragraph at lines 284--298
+Overfull \hbox (41.8279pt too wide) in paragraph at lines 273--287
 []$[]$$[]$ 
  []
 
@@ -1248,7 +1305,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33 <./Figures/best-augmented-images-pneumonia.png>]
+[40 <./Figures/best-augmented-images-pneumonia.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1256,19 +1313,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34 <./Figures/history-pneumonia-no-aug.png> <./Figures/history-pneumonia-aug.png>]
-<Figures/conf-matrix-no-aug.png, id=378, 353.32pt x 269.005pt>
+[41 <./Figures/history-pneumonia-no-aug.png> <./Figures/history-pneumonia-aug.png>]
+<Figures/conf-matrix-no-aug.png, id=449, 353.32pt x 269.005pt>
 File: Figures/conf-matrix-no-aug.png Graphic file (type png)
 <use Figures/conf-matrix-no-aug.png>
-Package pdftex.def Info: Figures/conf-matrix-no-aug.png  used on input line 370.
+Package pdftex.def Info: Figures/conf-matrix-no-aug.png  used on input line 359.
 (pdftex.def)             Requested size: 218.53804pt x 166.38731pt.
-<Figures/conf-matrix-pneumonia-aug.png, id=379, 353.32pt x 269.005pt>
+<Figures/conf-matrix-pneumonia-aug.png, id=450, 353.32pt x 269.005pt>
 File: Figures/conf-matrix-pneumonia-aug.png Graphic file (type png)
 <use Figures/conf-matrix-pneumonia-aug.png>
-Package pdftex.def Info: Figures/conf-matrix-pneumonia-aug.png  used on input line 377.
+Package pdftex.def Info: Figures/conf-matrix-pneumonia-aug.png  used on input line 366.
 (pdftex.def)             Requested size: 218.53804pt x 166.38731pt.
 
-Overfull \hbox (41.8279pt too wide) in paragraph at lines 368--387
+Overfull \hbox (41.8279pt too wide) in paragraph at lines 357--376
 []$[]$$[]$ 
  []
 
@@ -1279,11 +1336,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35]
-<Figures/test-results-pneumonia-600.png, id=387, 1151.30125pt x 1153.30875pt>
+[42]
+<Figures/test-results-pneumonia-600.png, id=459, 1151.30125pt x 1153.30875pt>
 File: Figures/test-results-pneumonia-600.png Graphic file (type png)
 <use Figures/test-results-pneumonia-600.png>
-Package pdftex.def Info: Figures/test-results-pneumonia-600.png  used on input line 394.
+Package pdftex.def Info: Figures/test-results-pneumonia-600.png  used on input line 383.
 (pdftex.def)             Requested size: 376.42575pt x 377.07346pt.
 
 
@@ -1293,7 +1350,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36 <./Figures/conf-matrix-no-aug.png> <./Figures/conf-matrix-pneumonia-aug.png>]
+[43 <./Figures/conf-matrix-no-aug.png> <./Figures/conf-matrix-pneumonia-aug.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1301,7 +1358,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37 <./Figures/test-results-pneumonia-600.png>]
+[44 <./Figures/test-results-pneumonia-600.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1309,39 +1366,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38])
+[45])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 26.68423pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.68423pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-14.68423pt}.
 
-[39]
+[46]
 Capitolo 6.
-(Capitoli/ch6.tex) [40
+(Capitoli/ch6.tex) [47
 
 ]
 Capitolo 7.
-No file tesi.bbl.
-[41
+[48
 
 ] (tesi.aux)
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 4C3950515339FA5D0C7EEBF53488F372;1781.
+(rerunfilecheck)             Checksum: 430C352E5BDD51F89E92D4A67E63391F;2300.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25103 strings out of 480236
- 464124 string characters out of 2890434
- 1379358 words of memory out of 3000000
- 40980 multiletter control sequences out of 15000+200000
+ 25136 strings out of 480236
+ 464553 string characters out of 2890434
+ 1381046 words of memory out of 3000000
+ 40990 multiletter control sequences out of 15000+200000
  582349 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,14n,99p,914b,1678s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 89i,14n,99p,914b,2422s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
@@ -1355,9 +1411,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {D:/Program Files/MiKTeX/fonts/enc/dvips/crimson/crm_axwm4k.enc}{D:/Program Files/MiKTeX/fonts/enc/dvips/crimson/crm_wttfgh.enc}{D:/Program Files/MiKTeX/fonts/enc/dvips/crimson/crm_qrsm2e.enc}<D:/Program Files/MiKTeX/fonts/type1/kosch/crimson/Crimson-Bold.pfb><D:/Program Files/MiKTeX/fonts/type1/kosch/crimson/Crimson-Italic.pfb><D:/Program Files/MiKTeX/fonts/type1/kosch/crimson/Crimson-Roman.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsltt10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (42 pages, 2218479 bytes).
+Output written on tesi.pdf (49 pages, 2248916 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
- 141 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 576 PDF objects out of 1000 (max. 8388607)
+ 162 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
 
