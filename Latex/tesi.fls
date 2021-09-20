@@ -751,11 +751,117 @@ INPUT D:\Program Files\MiKTeX\tex\latex\tools\longtable.sty
 INPUT D:\Program Files\MiKTeX\tex\latex\tools\longtable.sty
 INPUT D:\Program Files\MiKTeX\tex\latex\tools\longtable.sty
 INPUT D:\Program Files\MiKTeX\tex\latex\tools\longtable.sty
-OUTPUT json-lang.aux
-INPUT .\solidity-highlighting.tex
-INPUT solidity-highlighting.tex
-INPUT .\solidity-highlighting.tex
-INPUT solidity-highlighting.tex
+INPUT D:\Program Files\MiKTeX\tex\latex\systeme\systeme.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\systeme\systeme.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\systeme\systeme.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\systeme\systeme.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\systeme\systeme.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\systeme\systeme.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\systeme\systeme.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\systeme\systeme.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\systeme\systeme.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\Program Files\MiKTeX\tex\generic\xstring\xstring.tex
+INPUT D:\Program Files\MiKTeX\tex\generic\systeme\systeme.tex
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT .\pythonhighlight.sty
+INPUT pythonhighlight.sty
+INPUT .\pythonhighlight.sty
+INPUT .\pythonhighlight.sty
+INPUT .\pythonhighlight.sty
+INPUT .\pythonhighlight.sty
+INPUT pythonhighlight.sty
+INPUT .\pythonhighlight.sty
+INPUT pythonhighlight.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
 INPUT D:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
 INPUT D:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
 INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\ot1bch.fd
@@ -860,6 +966,9 @@ INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 OUTPUT tesi.toc
 INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Italic-tlf-ot1.tfm
 INPUT .\Capitoli\ch1.tex
@@ -885,40 +994,110 @@ INPUT .\Capitoli\ch2.tex
 INPUT .\Capitoli\ch2.tex
 INPUT Capitoli\ch2.tex
 INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Bold-tlf-ot1.tfm
-INPUT .\Capitoli\ch3.tex
-INPUT .\Capitoli\ch3.tex
-INPUT .\Capitoli\ch3.tex
-INPUT .\Capitoli\ch3.tex
-INPUT .\Capitoli\ch3.tex
-INPUT Capitoli\ch3.tex
-INPUT .\Capitoli\ch3.tex
-INPUT .\Capitoli\ch3.tex
-INPUT .\Capitoli\ch3.tex
-INPUT .\Capitoli\ch3.tex
-INPUT Capitoli\ch3.tex
+INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Roman-tlf-ot1.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Roman-tlf-ot1.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Roman-tlf-ot1.tfm
+INPUT D:\Program Files\MiKTeX\tex\latex\crimson\ts1crimson-tlf.fd
+INPUT D:\Program Files\MiKTeX\tex\latex\crimson\ts1crimson-tlf.fd
+INPUT D:\Program Files\MiKTeX\tex\latex\crimson\ts1crimson-tlf.fd
+INPUT D:\Program Files\MiKTeX\tex\latex\crimson\ts1crimson-tlf.fd
+INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Roman-tlf-ts1.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\kosch\crimson\Crimson-Roman-tlf-ts1.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Roman-tlf-ts1--base.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Roman-tlf-ot1.tfm
+INPUT .\Capitoli\ch4.tex
+INPUT .\Capitoli\ch4.tex
+INPUT .\Capitoli\ch4.tex
+INPUT .\Capitoli\ch4.tex
+INPUT .\Capitoli\ch4.tex
+INPUT Capitoli\ch4.tex
+INPUT .\Capitoli\ch4.tex
+INPUT .\Capitoli\ch4.tex
+INPUT .\Capitoli\ch4.tex
+INPUT .\Capitoli\ch4.tex
+INPUT Capitoli\ch4.tex
+INPUT .\Capitoli\ch5.tex
+INPUT .\Capitoli\ch5.tex
+INPUT .\Capitoli\ch5.tex
+INPUT .\Capitoli\ch5.tex
+INPUT .\Capitoli\ch5.tex
+INPUT Capitoli\ch5.tex
+INPUT .\Capitoli\ch5.tex
+INPUT .\Capitoli\ch5.tex
+INPUT .\Capitoli\ch5.tex
+INPUT .\Capitoli\ch5.tex
+INPUT Capitoli\ch5.tex
 INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Bold-tlf-ot1.tfm
-INPUT .\Capitoli\ch4.tex
-INPUT .\Capitoli\ch4.tex
-INPUT .\Capitoli\ch4.tex
-INPUT .\Capitoli\ch4.tex
-INPUT .\Capitoli\ch4.tex
-INPUT Capitoli\ch4.tex
-INPUT .\Capitoli\ch4.tex
-INPUT .\Capitoli\ch4.tex
-INPUT .\Capitoli\ch4.tex
-INPUT .\Capitoli\ch4.tex
-INPUT Capitoli\ch4.tex
-INPUT .\Capitoli\ch5.tex
-INPUT .\Capitoli\ch5.tex
-INPUT .\Capitoli\ch5.tex
-INPUT .\Capitoli\ch5.tex
-INPUT .\Capitoli\ch5.tex
-INPUT Capitoli\ch5.tex
-INPUT .\Capitoli\ch5.tex
-INPUT .\Capitoli\ch5.tex
-INPUT .\Capitoli\ch5.tex
-INPUT .\Capitoli\ch5.tex
-INPUT Capitoli\ch5.tex
+INPUT .\figures\\san.jpeg
+INPUT figures\\san.jpeg
+INPUT .\figures\\san.jpeg
+INPUT .\figures\\san.jpeg
+INPUT .\figures\\san.jpeg
+INPUT .\figures\\san.jpeg
+INPUT D:\Program Files\MiKTeX\fonts\tfm\kosch\crimson\Crimson-Roman-tlf-ot1.tfm
+INPUT .\figures\\bacteria.jpeg
+INPUT figures\\bacteria.jpeg
+INPUT .\figures\\bacteria.jpeg
+INPUT .\figures\\bacteria.jpeg
+INPUT .\figures\\bacteria.jpeg
+INPUT .\figures\\bacteria.jpeg
+INPUT .\figures\\virus.jpeg
+INPUT figures\\virus.jpeg
+INPUT .\figures\\virus.jpeg
+INPUT .\figures\\virus.jpeg
+INPUT .\figures\\virus.jpeg
+INPUT .\figures\\virus.jpeg
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT D:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsltt10.tfm
+INPUT .\Figures\best-augmented-images-pneumonia.png
+INPUT .\Figures\best-augmented-images-pneumonia.png
+INPUT Figures\best-augmented-images-pneumonia.png
+INPUT .\Figures\best-augmented-images-pneumonia.png
+INPUT .\Figures\best-augmented-images-pneumonia.png
+INPUT .\Figures\best-augmented-images-pneumonia.png
+INPUT .\Figures\best-augmented-images-pneumonia.png
+INPUT .\Figures\history-pneumonia-no-aug.png
+INPUT .\Figures\history-pneumonia-no-aug.png
+INPUT Figures\history-pneumonia-no-aug.png
+INPUT .\Figures\history-pneumonia-no-aug.png
+INPUT .\Figures\history-pneumonia-no-aug.png
+INPUT .\Figures\history-pneumonia-no-aug.png
+INPUT .\Figures\history-pneumonia-no-aug.png
+INPUT .\Figures\history-pneumonia-aug.png
+INPUT .\Figures\history-pneumonia-aug.png
+INPUT Figures\history-pneumonia-aug.png
+INPUT .\Figures\history-pneumonia-aug.png
+INPUT .\Figures\history-pneumonia-aug.png
+INPUT .\Figures\history-pneumonia-aug.png
+INPUT .\Figures\history-pneumonia-aug.png
+INPUT .\Figures\conf-matrix-no-aug.png
+INPUT .\Figures\conf-matrix-no-aug.png
+INPUT Figures\conf-matrix-no-aug.png
+INPUT .\Figures\conf-matrix-no-aug.png
+INPUT .\Figures\conf-matrix-no-aug.png
+INPUT .\Figures\conf-matrix-no-aug.png
+INPUT .\Figures\conf-matrix-no-aug.png
+INPUT .\Figures\conf-matrix-pneumonia-aug.png
+INPUT .\Figures\conf-matrix-pneumonia-aug.png
+INPUT Figures\conf-matrix-pneumonia-aug.png
+INPUT .\Figures\conf-matrix-pneumonia-aug.png
+INPUT .\Figures\conf-matrix-pneumonia-aug.png
+INPUT .\Figures\conf-matrix-pneumonia-aug.png
+INPUT .\Figures\conf-matrix-pneumonia-aug.png
+INPUT .\Figures\test-results-pneumonia-600.png
+INPUT .\Figures\test-results-pneumonia-600.png
+INPUT Figures\test-results-pneumonia-600.png
+INPUT .\Figures\test-results-pneumonia-600.png
+INPUT .\Figures\test-results-pneumonia-600.png
+INPUT .\Figures\test-results-pneumonia-600.png
+INPUT .\Figures\test-results-pneumonia-600.png
 INPUT .\Capitoli\ch6.tex
 INPUT .\Capitoli\ch6.tex
 INPUT .\Capitoli\ch6.tex
@@ -933,6 +1112,7 @@ INPUT Capitoli\ch6.tex
 INPUT tesi.aux
 INPUT .\tesi.out
 INPUT .\tesi.out
+INPUT D:\Program Files\MiKTeX\fonts\enc\dvips\crimson\crm_axwm4k.enc
 INPUT D:\Program Files\MiKTeX\fonts\enc\dvips\crimson\crm_wttfgh.enc
 INPUT D:\Program Files\MiKTeX\fonts\enc\dvips\crimson\crm_qrsm2e.enc
 INPUT D:\Program Files\MiKTeX\fonts\type1\kosch\crimson\Crimson-Bold.pfb
@@ -941,3 +1121,25 @@ INPUT D:\Program Files\MiKTeX\fonts\type1\kosch\crimson\Crimson-Italic.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\kosch\crimson\Crimson-Italic.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\kosch\crimson\Crimson-Roman.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\kosch\crimson\Crimson-Roman.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsltt10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsltt10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb

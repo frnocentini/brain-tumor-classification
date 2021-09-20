@@ -1,6 +1,96 @@
 \section{Funzionamento generale}
-\section{Convoluzione e Convoluzione2D}
-\subsection{Convoluzione}
+Le Convolutional Neural Networks, o reti di convoluzione, sono reti specializzate 
+nell'elaborazione di dati che hanno la forma di vettori multipli con una topologia 
+nota a forma di griglia. Esse nascono nel 1990 dalla ricerca di Yann LeCun 
+insieme al suo team basandosi sul funzionamento della corteccia visiva del
+ cervello umano. Grazie alle ottime prestazioni che si sono riuscite a ricavare 
+ soprattutto in ambito del riconoscimento di immagini, ancora oggi le
+CNN sono considerate lo “stato dell’arte” per quanto riguarda riconoscimento di
+ pattern ed immagini. 
+Un’immagine può essere vista come una griglia di due dimensioni di pixel 
+contenente i tre valori di intensità per i tre canali del colore (RGB). 
+Il nome reti di convoluzione è dato appunto dal fatto che durante il suo 
+funzionamento esegue un’operazione matematica chiamata convoluzione. 
+Un aspetto chiave di ogni algoritmo di Machine Learning è quello di riuscire
+ ad estrarre i tratti pi`u importanti dai dati in ingresso. Le CNN sono 
+ in grado di capire in maniera automatica i tratti più rilevanti e di apprenderne 
+ i pattern; per questo motivo di norma gli strati delle CNN vengono considerati 
+ come dei blocchi per rilevare i tratti: i primi strati (quelli subito dopo lo
+  strato di ingresso) sono considerati “low-level features extractors”, mentre
+   gli ultimi strati (di solito completamente connessi come quelli delle Reti 
+   Neurali non convolutive discusse all’inizio sono considerati 
+   “high-level features extractors”. Nelle immagini le “low-level features” sono
+    ad esempio i bordi o i blob (in letteratura vengono definiti blob alcuni tipi
+di blocchi elementari) che vengono rielaborate per formare delle “high-level
+ features”le quali, una volta date in pasto agli ultimi strati della rete,
+  saranno in grado di creare, ad esempio, i contorni di case, cani, gatti
+   o qualsiasi cosa fosse presente nell’immagine originale. 
+   Le CNN elaborano delle “mappe dei tratti”dove ogni elemento corrisponde
+    a dei pixel nell’immagine originale. Per ottenere questo risultato è necessario
+     effettuare appunto l’operazione di convoluzione.
 
-\subsection{Strati di subsampling}
+\section{Architettura generale di una CNN}
+\subsection{Convoluzione}
+Una CNN usa la convoluzione al posto del generale prodotto matriciale in 
+almeno uno dei suoi strati. 
+La convoluzione è una operazione su due funzioni a valori reali; 
+date queste due funzioni x e w, il loro prodotto di convoluzione sarà
+\[s(t) = \int x(a)w(t-a) da = (x * w) (t).\]
+Nelle reti di convoluzione spesso la funzione x si riferisce
+ all’input e la funzione w al kernel, che può essere visto come una funzione
+  di peso relativa ai dati di input. Più in generale, nelle applicazioni l’input 
+  è un vettore multidimensionale dei dati e il kernel è un altro array 
+  multidimensionale di parametri che vengono adattati dall’algoritmo di
+   apprendimento in maniera appropriata. Per utilità pratiche conviene 
+   definire nello specifico l’operazione di convoluzione discreta, 
+   un prodotto di convoluzione che invece di essere implementato su un integrale
+    esteso all’infinito è implementato su una sommatoria su un numero finito di 
+    indici riferiti agli elementi dei vettori. Per esempio, avendo come input
+     una immagine bidimensionale I, si potrà usare un kernel bidimensionale W :
+\[S(i, j) = ( I * W )(i, j) = \sum_{m}\sum_{n} I(m, n)W(i-m, j-n).\]
+Spesso nelle implementazioni software si preferisce utilizzare una funzione che si basa su quella sopra,
+ chiamata cross-correlation, che è la stessa della convoluzione ma con
+  il kernel capovolto. 
+  \[S(i, j) = ( I * W )(i, j) = \sum_{m}\sum_{n} I(i+m, j+n)W(m, n).\]
+
+Vi sono tre concetti alla base del funzionamento delle CNN :\\
+1)Sparse Connectivity (connessioni locali).\\
+L’idea è in un’immagine i pixel che sono spazialmente più vicini sono più propensi a essere qualcosa di correlato tra loro. 
+Per esempio, nell’analisi di una immagine di input che abbia centinaia o milioni di pixel siamo interessati a individuare feature significative o dettagli importanti molto piccoli rispetto alla dimensione totale dell’immagine, contenuti per esempio in una decina di pixel come ordine di grandezza.
+Gli strati tradizionali delle reti neurali usano il prodotto matriciale tra matrici di parametri che descrivono l’interazione tra ogni unità di input con ogni singolo output; questo significa che ogni unità di output interagisce con ogni unità di input. Le reti di convoluzione invece possono avere connessioni locali tra i neuroni che generano interazioni sparse nella rete. Questa connessione locale può essere formalizzata impostando il kernel più piccolo dell’input. 
+Dati m input e n output, un prodotto matriciale richiederebbe m·n parametri e l’algoritmo un tempo O(m ·n) di elaborazione. Limitando il numero di connessioni per ogni output ad un numero k più piccolo di m sarebbero richiesti solo k ·n parametri e un tempo di elaborazione pari a O(k ·n). Il guadagno in efficienza diventa estremamente importante con k più piccoli di m di molti ordini di grandezza. Dunque l’idea della convoluzione è di preservare le relazioni spaziali tra i pixel. 
+Ridurre il numero di connessioni regolarizza la rete e riduce il rischio di overfitting. 
+
+2) Parameter-sharing (parametri condivisi). \\
+Gli stessi pesi vengono utilizzati per diversi gruppi di pixel dell’immagine principale.\\
+In una rete tradizionale, ogni elemento della matrice dei pesi è usato esattamente
+ una volta durante il calcolo di un output dello strato e poi non viene più riutilizzato. Qui gli stessi pesi vengono utilizzati per diversi gruppi di pixel dell’immagine principale. Il valore di un peso applicato ad un input è collegato al valore di un peso applicato in un altro punto della rete. In una CNN ogni membro del kernel invariante alle traslazioni, quindi è usato in tutte le posizioni dell’input (eccetto che per alcune particolari condizioni al contorno). La rete apprende quindi solo da un determinato set di parametri, invece che da tanti set separati per ogni sezione dell’input, il che riduce significativamente il numero di accessi in memoria.  Inoltre si sa che così come i neuroni della corteccia cerebrale sono designati a riconoscere feature locali dell’immagine (come angoli o bordi), si utilizzano gli stessi kernel (o filtri) per differenti parti dell’immagine, sempre con gli stessi pesi e valori di attivazione. 
+
+3)Pooling.\\
+In una rete tradizionale, ogni elemento della matrice dei pesi è usato esattamente una volta durante il calcolo di un output dello strato e poi non viene più riutilizzato. Qui gli stessi pesi vengono utilizzati per diversi gruppi di pixel dell’immagine principale. Il valore di un peso applicato ad un input è collegato al valore di un peso applicato in un altro punto della rete. In una CNN ogni membro del kernel invariante alle traslazioni, quindi è usato in tutte le posizioni dell’input (eccetto che per alcune particolari condizioni al contorno). La rete apprende quindi solo da un determinato set di parametri, invece che da tanti set separati per ogni sezione dell’input, il che riduce significativamente il numero di accessi in memoria.  Inoltre si sa che così come i neuroni della corteccia cerebrale sono designati a riconoscere feature locali dell’immagine (come angoli o bordi), si utilizzano gli stessi kernel (o filtri) per differenti parti dell’immagine, sempre con gli stessi pesi e valori di attivazione. 
+
+
+
+
+\subsection{Strati di subsampling: Pooling Layers}
+Questo strato di solito è applicato subito dopo quello di convoluzione perchè lavora sull’output processato da questo strato. Un neurone di uno strato di pooling prende gli input di diverse feature maps vicine tra loro e li riduce ad un singolo output. 
+Esistono due tipi di subsampling layers di questo tipo:\\
+-Max Pooling Layers: le unità di questo strato calcolano il massimo di una porzione locale (definita a seconda della dimensione stabilita dal codice, ad esempio porzioni 2x2) in una mappa di feature. Allora una funzione di pooling sostituisce l’output di una rete ad una certa locazione con un risultato che riassume quelli ottenuti dagli output vicini, riducendo la dimensione della rappresentazione e focalizzando l’analisi solo sui punti salienti dell’oggetto analizzato. 
+-Mean pooling: in questo caso ogni neurone prende il valore medio dei valori della porzione di input. In sintesi, un livello di pooling esegue un’aggregazione delle informazioni nel volume di input, generando feature map di dimensione inferiore, conferendo invarianza rispetto a semplici trasformazioni dell’input mantenendo al tempo stesso
+le informazioni significative ai fini della discriminazione dei pattern contenuti nei dati di input analizzati.
+Se si ha una feature map di dimensione W x W x D, un kernel di pooling di dimensione F e un valore di stride pari a S, allora la grandezza dell’output sarà determinato dalla formula 
+\[\frac{(W-F)}{S}+1\]
+Il pooling funziona sull’idea di base per cui piccoli cambiamenti non cambieranno il risultato finale, perciò aggiunge robustezza ai dati. 
+
+
+Ricapitolando, l’architettura di una CNN consiste generalmente di questi strati: \\
+-Input\\
+-Convoluzione \\
+-Attivazione non lineare\\
+-Pooling \\
+-Flattening\\
+-Dense layers\\
+-Output\\
+
+
 

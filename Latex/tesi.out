@@ -1,23 +1,25 @@
 \BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Machine learning e le reti neurali}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Machine learning e reti neurali}{}% 2
 \BOOKMARK [1][-]{section.2.1}{L'importanza dell'apprendimento}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Deep Learning}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.3}{Neuroni Artificiali}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.4}{Addestramento di una rete}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.5}{Overfitting e underfitting}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.6}{Classificazione}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter.3}{Reti neurali convoluzionali}{}% 9
-\BOOKMARK [1][-]{section.3.1}{Funzionamento generale}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.2}{Convoluzione e Convoluzione2D}{chapter.3}% 11
-\BOOKMARK [2][-]{subsection.3.2.1}{Convoluzione}{section.3.2}% 12
-\BOOKMARK [2][-]{subsection.3.2.2}{Strati di subsampling}{section.3.2}% 13
-\BOOKMARK [0][-]{chapter.4}{Ambiente di lavoro}{}% 14
-\BOOKMARK [1][-]{section.4.1}{Python}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.2}{Tensorflow e Keras}{chapter.4}% 16
-\BOOKMARK [0][-]{chapter.5}{Implementazione della rete e prove sperimentali}{}% 17
-\BOOKMARK [1][-]{section.5.1}{Obiettivo}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.2}{Preparazione dell'ambiente}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.3}{Brain Tumor Classification Dataset}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.4}{Pneumonia Dataset}{chapter.5}% 21
-\BOOKMARK [0][-]{chapter.6}{Conclusioni}{}% 22
-\BOOKMARK [0][-]{chapter.7}{Codice}{}% 23
+\BOOKMARK [1][-]{section.2.2}{Neuroni artificiali e deep learning}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Addestramento di una rete}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Overfitting e underfitting}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.5}{Classificazione}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.3}{Reti neurali convoluzionali}{}% 8
+\BOOKMARK [0][-]{chapter.4}{Ambiente di lavoro}{}% 9
+\BOOKMARK [1][-]{section.4.1}{Python}{chapter.4}% 10
+\BOOKMARK [1][-]{section.4.2}{Tensorflow e Keras}{chapter.4}% 11
+\BOOKMARK [0][-]{chapter.5}{Implementazione delle reti e prove sperimentali}{}% 12
+\BOOKMARK [1][-]{section.5.1}{Obiettivo}{chapter.5}% 13
+\BOOKMARK [1][-]{section.5.2}{CNN per la rilevazione della polmonite}{chapter.5}% 14
+\BOOKMARK [2][-]{subsection.5.2.1}{Il dataset}{section.5.2}% 15
+\BOOKMARK [2][-]{subsection.5.2.2}{Setup iniziale}{section.5.2}% 16
+\BOOKMARK [2][-]{subsection.5.2.3}{Definizione degli iperparametri}{section.5.2}% 17
+\BOOKMARK [2][-]{subsection.5.2.4}{Definizione e compilazione del modello}{section.5.2}% 18
+\BOOKMARK [2][-]{subsection.5.2.5}{Creazione dei set di training e validation traminte l\220uso dell\220image flowing}{section.5.2}% 19
+\BOOKMARK [2][-]{subsection.5.2.6}{Fase di fitting}{section.5.2}% 20
+\BOOKMARK [2][-]{subsection.5.2.7}{Predizioni}{section.5.2}% 21
+\BOOKMARK [2][-]{subsection.5.2.8}{Considerazioni finali}{section.5.2}% 22
+\BOOKMARK [1][-]{section.5.3}{CNN per la classificazione di risonanze magnetiche cerebrali}{chapter.5}% 23
+\BOOKMARK [0][-]{chapter.6}{Conclusioni}{}% 24
+\BOOKMARK [0][-]{chapter.7}{Codice}{}% 25

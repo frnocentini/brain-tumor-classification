@@ -1,25 +1,27 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \contentsline {chapter}{\numberline {1}Introduzione}{4}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Machine learning e le reti neurali}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Machine learning e reti neurali}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}L'importanza dell'apprendimento}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Deep Learning}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Neuroni Artificiali}{5}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Addestramento di una rete}{5}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Overfitting e underfitting}{5}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Classificazione}{5}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Reti neurali convoluzionali}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Funzionamento generale}{6}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Convoluzione e Convoluzione2D}{6}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Convoluzione}{6}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Strati di subsampling}{6}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Ambiente di lavoro}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Python}{7}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Tensorflow e Keras}{7}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Implementazione della rete e prove sperimentali}{8}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Obiettivo}{8}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Preparazione dell'ambiente}{8}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Brain Tumor Classification Dataset}{8}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Pneumonia Dataset}{8}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{9}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Codice}{10}{chapter.7}%
+\contentsline {section}{\numberline {2.2}Neuroni artificiali e deep learning}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Addestramento di una rete}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Overfitting e underfitting}{16}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Classificazione}{18}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Reti neurali convoluzionali}{20}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Ambiente di lavoro}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Python}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tensorflow e Keras}{21}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Implementazione delle reti e prove sperimentali}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Obiettivo}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}CNN per la rilevazione della polmonite}{23}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Il dataset}{23}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Setup iniziale}{24}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Definizione degli iperparametri}{25}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Definizione e compilazione del modello}{26}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Creazione dei set di training e validation traminte l’uso dell’image flowing}{31}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Fase di fitting}{33}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Predizioni}{34}{subsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.2.8}Considerazioni finali}{37}{subsection.5.2.8}%
+\contentsline {section}{\numberline {5.3}CNN per la classificazione di risonanze magnetiche cerebrali}{39}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{40}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Codice}{41}{chapter.7}%
