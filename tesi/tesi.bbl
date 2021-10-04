@@ -1,0 +1,178 @@
+\begin{thebibliography}{10}
+
+\bibitem{ann}
+P.~Shukla and R.~Iriondo, ``{Neural Networks from Scratch with Python Code and
+  Math in Detail— I},'' Accessed: September, 2021.
+\newblock [\url{https://bit.ly/3CTHArw}].
+
+\bibitem{learning}
+R.~Iriondo, ``{What is Machine Learning?},'' Accessed: September, 2021.
+\newblock [\url{
+  https://pub.towardsai.net/what-is-machine-learning\-ml-b58162f97ec7}].
+
+\bibitem{ml}
+Russell, Stuart, Norvig, and Peter, {\em {Artificial Intelligence: A Modern
+  Approach (2nd ed.)}}.
+\newblock Prentice Hall, 2003.
+
+\bibitem{class}
+{Dr. Michael Garbade}, ``{Regression versus classification},'' Accessed:
+  September, 2021.
+\newblock [\url{https://bit.ly/2Yd0oDt}].
+
+\bibitem{prob}
+{Gianluca Amato}, ``{Classificazione e predizione},'' Accessed: September,
+  2021.
+\newblock [\url{https://www.sci.unich.it/~amato/teaching/old/datamining08/\
+  lucidi/05-classificazione.pdf}].
+
+\bibitem{img_learning}
+{GitHubCommunity}, ``{Apprendimento supervisionato},'' Accessed: September,
+  2021.
+\newblock [\url{ https://tvml.github.io/ml1819/store/book.pdf}].
+
+\bibitem{reti}
+B.~Mehlig, {\em {Machine learning with neural networks}}.
+\newblock University of Gothenburg, Feb 2021.
+
+\bibitem{neuron}
+{Matthew Roos}, ``{Deep Learning Neurons versus Biological Neurons},''
+  Accessed: September, 2021.
+\newblock [\url{https://bit.ly/3kQ3iqd}].
+
+\bibitem{dl}
+{Osservatori Digital Innovation}, ``{Alla scoperta del Deep Learning:
+  significato, esempi e applicazioni},'' Accessed: September, 2021.
+\newblock [\url{blog.osservatori.net}].
+
+\bibitem{dim}
+Bellman and R.~Ernest, {\em {Dynamic programming. Princeton University Press}}.
+\newblock University of Gothenburg, 1957.
+
+\bibitem{dnn}
+Y.~Mahdid, ``{GitHub: machine learning},'' Accessed: September, 2021.
+\newblock [\url{https://bit.ly/3kWKdTw}].
+
+\bibitem{tesi}
+{Luca Marzano}, ``{Algoritmi di deep learning per l'analisi di dati
+  scientifici},'' Accessed: September, 2021.
+\newblock
+  [\url{https://cdlfbari.cloud.ba.infn.it/wp-content/uploads/file-manager/CIF/Triennale/Tesi%20di%20laurea/16-17-MARZANO%20Luca.pdf}].
+
+\bibitem{ofuf}
+``{Fitting del modello: Fitting e overfitting},'' Accessed: September, 2021.
+\newblock
+  [\url{https://docs.aws.amazon.com/it_it/machine-learning/latest/dg/model-fit-underfitting-vs-overfitting.html}].
+
+\bibitem{classdef}
+T.~Mitchell, {\em {Machine Learning}}.
+\newblock McGraw Hill, 1997.
+
+\bibitem{cnn}
+A.~Bonner, ``{The Complete Beginner’s Guide to Deep Learning: Convolutional
+  Neural Networks and Image Classification},'' Accessed: September, 2021.
+\newblock
+  [\url{https://towardsdatascience.com/wtf-is-image-classification-8e78a8235acb}].
+
+\bibitem{feature}
+G.~Cannata, ``{Come le reti neurali vedono le cose },'' Accessed: September,
+  2021.
+\newblock
+  [\url{https://it.quora.com/Come-le-reti-neurali-profonde-vedono-le-cose}].
+
+\bibitem{sparse}
+S.~Dey, K.-W. Huang, P.~A. Beerel, and K.~M. Chugg, ``{Characterizing Sparse
+  Connectivity Patterns in Neural Networks },'' Accessed: September, 2021.
+\newblock [\url{https://arxiv.org/pdf/1711.02131.pdf}].
+
+\bibitem{max-pool}
+H.~Wu and X.~Gu, ``{Max-Pooling Dropout for Regularization of Convolutional
+  Neural Networks },'' Accessed: September, 2021.
+\newblock [\url{https://arxiv.org/ftp/arxiv/papers/1512/1512.01400.pdf}].
+
+\bibitem{grad}
+C.~F. Wang, ``{The Vanishing Gradient Problem},'' Accessed: September, 2021.
+\newblock
+  [\url{https://towardsdatascience.com/the-vanishing-gradient-problem-69bf08b15484}].
+
+\bibitem{cnn2}
+E.~Allibhai, ``{Building a Convolutional Neural Network (CNN) in Keras },''
+  Accessed: September, 2021.
+\newblock
+  [\url{https://towardsdatascience.com/building-a-convolutional-neural-network-cnn-in-keras-329fbbadc5f5
+  }].
+
+\bibitem{lib}
+C.~D. Costa, ``{Best Python Libraries for Every Python Developer },'' Accessed:
+  September, 2021.
+\newblock
+  [\url{https://towardsdatascience.com/best-python-libraries-for-every-python-developer-77daab4fa40e}].
+
+\bibitem{keras}
+``Offical keras documentation,'' Accessed: September, 2021.
+\newblock [\url{https://keras.io/}].
+
+\bibitem{tf}
+``Tensorflow documentation,'' Accessed: September, 2021.
+\newblock [\url{https://www.tensorflow.org/}].
+
+\bibitem{jn}
+``Jupyter documentation,'' Accessed: September, 2021.
+\newblock [\url{https://jupyter.org/}].
+
+\bibitem{dspneum}
+P.~Breviglieri, ``{Pneumonia X-Ray images },'' Accessed: September, 2021.
+\newblock [\url{https://www.kaggle.com/pcbreviglieri/pneumonia-xray-images}].
+
+\bibitem{augpneum}
+M.~Elgendi, ``{The Effectiveness of Image Augmentation in Deep Learning
+  Networks for Detecting COVID-19: A Geometric Transformation Perspective},''
+  Accessed: September, 2021.
+\newblock
+  [\url{https://www.frontiersin.org/articles/10.3389/fmed.2021.629134/full}].
+
+\bibitem{dsbrain}
+S.~Bouvaij, ``{Brain Tumor Classification (MRI)},'' Accessed: September, 2021.
+\newblock
+  [\url{https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri}].
+
+\bibitem{dropout}
+A.~Aianzadeh, ``{Stanford CS231n- Dropout Assignment},'' Accessed: September,
+  2021.
+\newblock
+  [\url{https://medium.com/deepvision/cs231n-dropout-assignment-c80f3170854b}].
+
+\bibitem{norm}
+Ioffe, Sergey, Szegedy, and Christian, ``{"Batch Normalization: Accelerating
+  Deep Network Training by Reducing Internal Covariate Shift"},'' Accessed:
+  September, 2021.
+\newblock [\url{https://arxiv.org/abs/1502.03167}].
+
+\bibitem{alexnet}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``{ImageNet Classification with
+  Deep Convolutional Neural Networks },'' Accessed: September, 2021.
+\newblock [\url{https://dl.acm.org/doi/pdf/10.1145/3065386}].
+
+\bibitem{effnet}
+M.~Tan and Q.~V. Le, ``{EfficientNet: Rethinking Model Scaling for
+  Convolutional Neural Networks },'' Accessed: September, 2021.
+\newblock [\url{https://arxiv.org/pdf/1905.11946v1.pdf}].
+
+\bibitem{mobilenet}
+P.-L. Prove, ``{MobileNetV2: Inverted Residuals and Linear Bottlenecks },''
+  Accessed: September, 2021.
+\newblock
+  [\url{https://towardsdatascience.com/mobilenetv2-inverted-residuals-and-linear-bottlenecks-8a4362f4ffd5}].
+
+\bibitem{gaussnoise}
+G.~An, ``{The Effects of Adding Noise During Backpropagation Training on a
+  Generalization Performance },'' Accessed: September, 2021.
+\newblock [\url{https://ieeexplore.ieee.org/document/6796981}].
+
+\bibitem{Roc}
+Fawcett and Tom, ``{ROC Graphs: Notes and Practical Considerations for
+  Researchers},'' 2004.
+\newblock
+  [\url{https://www.researchgate.net/publication/284043217_ROC_Graphs_Notes_and_Practical_Considerations_for_Researchers}].
+
+\end{thebibliography}

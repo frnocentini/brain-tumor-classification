@@ -1,0 +1,83 @@
+In questa sezione si analizzano i principali strumenti software utilizzati per lavorare
+con le reti convoluzionali per la classificazione di immagini.
+\section{Python}
+Per l'implementazione e la sperimentazione delle tecniche e dei modelli di deep-learning il linguaggio 
+scelto è stato Python (v. 3.8.5), per la sua semplicità e versatilità.\\
+La piattaforma utilizzata per lavorare con Python è Anaconda, di grande popolarità nell'ambito della data 
+science in quanto semplifica sensibilmente il processo di setup di un ambiente di sviluppo
+racchiudendo assieme nella stessa distribuzione l'installer di Python, un package e environment manager dedicato chiamato \emph{Conda} e molte altre librerie integrate.
+Le principali, usate nel presente lavoro di tesi sono~\cite{lib}:
+\begin{itemize}
+    \item \emph{NumPy}, cioè il package fondamentale per la computazione numerica. \\
+    Fornisce oggetti multidimensionali ad alta performance chiamati array, degli strumenti per
+     lavorare con essi in maniera efficiente ed è dotata di funzioni che facilitano le operazioni. 
+     É estremamente utilizzato nell'analisi dei
+     dati e nel lavoro di tesi è risultato essere essenziale per lavorare in sinergia con librerie
+      come \emph{TensorFlow}.
+    Permette di creare array N-dimensionali ed è la base di altre librerie come \emph{scikit-learn};
+    \item \emph{Scikit-learn}, è un package di machine learning che fornisce molti algoritmi e può essere utilizzato
+    anche per problemi di classificazione. Principalmente è stato impiegato per realizzare i grafici e le strutture utili 
+    per mostrare le previsioni del modello (matrici di convoluzione, report di classificazione...)
+    \item \emph{Matplotlib} è una libreria per il plotting e serve a produrre schemi e grafici ed
+     è molto utilizzato 
+    in generale per la visualizzazione dei dati a basso utilizzo di memoria. É stato infatti sfruttato per la visualizzazione delle immagini stesse. 
+    \item \emph{Pandas} (Python Data Analysis) serve per l'analisi dei dati e fornisce strutture 
+    dati veloci e flessibili;
+    \item \emph{OpenCV} (Open-source Computer Vision Library) è una libreria software multipiattaforma nell'ambito della visione artificiale. 
+    Con questa libreria è stato possibile leggere e ridimensionare le immagini. 
+    
+\end{itemize}
+Le librerie che sono state caratterizzanti l'esperienza di lavoro con le reti neurali sono state 
+TensorFlow e Keras.
+
+\section{Tensorflow e Keras}
+Keras ~\cite{keras,tf}è una libreria di alto livello scritta in Python. Si tratta di un software per l'apprendimento automatico e le reti neurali, progettata come
+ un'interfaccia a un livello di astrazione superiore di altre librerie simili usate come \emph{back-end}\footnote{con questo termine si indica parte
+  del software che elabora i dati generati dal front end, ovvero quella parte che gestisce 
+  l'interazione con l'utente o con sistemi esterni che producono dati di ingresso}.
+  Una delle più utilizzate dal 2017 è TensorFlow, ovvero una libreria di basso livello,
+   un framework che offre molte API per il machine learning e le intelligenze artificiali,
+    sia di alto sia di basso livello.
+  TensorFlow 2.0, rilasciato nell'ottobre 2019, è l'ultima versione utilizzabile ad oggi.
+  Keras è spesso citato nella letteratura scientifica perchè utilissimo per sperimentazioni veloci e poco costose, per la sua modularità ed estensibilità.
+Inoltre gli oggetti che questa libreria permette di utilizzare rispecchiano in maniera 
+molto intuitiva quello
+che è il loro utilizzo. Esempi di oggetti Keras sono i \emph{modelli}, i \emph{layer} e gli 
+\emph{ottimizzatori}, i quali non sono altro
+che le strutture che compongono l'architettura di una CNN di cui si è trattato sopra.\\
+Keras minimizza il numero di azioni dell'utente richieste per casi di uso comune,
+fornisce messaggi di errore molto chiari per un debug rapido e possiede una documentazione molto estesa.
+Prende vantaggio dall'impiego di TensorFlow. Questa ultima può essere utilizzata per task differenti, ma 
+ha un focus in particolare nel riuscire ad allenare modelli di deep learning e dargli capacità di inferenza.
+TF può anche essere definita come una libreria matematica simbolica basata sul dataflow e la programmazione differenziale.
+É molto utilizzata anche nell'ambito della ricerca da parte di Google.\\
+
+\section{Jupyter notebook e GoogleCollab}
+Il codice che è stato sviluppato per creare il sistema di deep learning è stato fatto girare su Jupyter~\cite{jn} 
+ovvero un'applicazione client-server che permette di editare e fare il running di documenti notebook tramite 
+il browser web. Jupyter può essere eseguito nel desktop locale senza bisogno di un accesso a internet oppure
+può essere installato in un server remoto e acceduto tramite internet. \\
+Inoltre l'applicazione Jupyter possiede anche una Dashboard, ovvero un pannello di controllo che mostra i file 
+locali e che permette di aprire documenti notebook o fare uno shutdown dei loro kernel. Un kernel di un 
+notebook non è altro che una \emph{computational engine} che esegue il codice contenuto in un documento notebook.
+Il kernel utilizzato nella fase di scrittura del codice è \emph{ipython}, che esegue appunto codice Python.\\
+A seconda del tipo di operazioni che deve eseguire, il kernel consuma molta CPU e RAM e l'ultima non viene 
+rilasciata fintanto che non si fa lo shutdown del kernel stesso. \\
+Jupyter è molto comodo in quanto permette di decidere a piacimento quando accendere o spengere il kernel, di salvare 
+i modelli allenati sul disco e riutilizzarli quando si vuole, lasciare il modello fare training anche per ore. Ciononostante
+l'utilizzo della CPU e della RAM è piuttosto elevato. La CPU con cui sono stati fatti i training su Jupyter è una AMD Ryzen 7 4800H.\\
+Per fare training e impiegare meno tempo e risorse è stato introdotto anni fa l'uso della GPU, il quale
+velocizza moltissimo il training. \\
+Al fine di evitare di installare altre dipendenze per far uso della GPU su Jupyter, è stato utilizzato
+in alternativa ad esso il notebook Google Colaboratory, che non sono altro che blocchi note Jupyter ospitati da Collab.
+  Permette di scrivere ed eseguire codice Python
+ nel browser con i seguenti vantaggi:
+ \begin{itemize}
+     \item nessuna configurazione necessaria;
+    \item  accesso gratuito alle GPU di Google (ovviamente per un periodo di tempo limitato);
+    \item condivisione semplificata del notebook.
+ \end{itemize}
+ Ovviamente però vi sono dei limiti: le variabili salvate su notebook Collab hanno durata massima di 12 ore e 
+ il tempo di runtime del codice scade dopo 90 minuti di inattività. \\
+
+ 

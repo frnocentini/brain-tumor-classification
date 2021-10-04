@@ -1,0 +1,503 @@
+Si riporta il codice Python utilizzato per il training del sistema per la classificazione dei raggi X e successivamente quello per la diagnostica delle RM.
+
+\begin{lstlisting}[basicstyle=\tiny, language=Python, caption=Esempio di implementazione di una CNN per la classificazione di raggi-X.~\cite{dspneum} ]
+#Si importano le principali librerie
+import matplotlib.pyplot as plt #per la visualizzazione
+import numpy as np              #per gestire gli array
+import pandas as pd             #per gestire i dati
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense,Conv2D,Flatten,MaxPooling2D
+from tensorflow.keras.callbacks import EarlyStopping,ReduceLROnPlateau
+from sklearn.utils.class_weight import compute_class_weight
+from sklearn.metrics import classification_report,confusion_matrix
+import sklearn.metrics as metrics #per fare le previsioni
+import seaborn as sns 
+import scikitplot as skplt
+
+#Si definiscono le directory per il training, testing e validation
+train_path = './pneumonia/train'
+test_path = './pneumonia/test'
+valid_path = './pneumonia/val'
+
+#Si definiscono gli iperparametri
+batch_size = 16
+img_height = 500
+img_width = 500
+channels = 1
+hyper_epochs = 20
+
+#Si applicano le teniche di image preprocessing di cui si parla nella sezione 5.2.5 al set di training e testin
+from tensorflow.keras.preprocessing.image import ImageDataGenerator# Create Image Data Generator for Train Set
+image_gen = ImageDataGenerator( rescale = 1./255,
+                                rotation_range = 5,
+                                zoom_range = 0.2)                            
+test_data_gen = ImageDataGenerator(rescale = 1./255)
+
+train = image_gen.flow_from_directory(
+      train_path,
+      target_size=(img_height, img_width),
+      color_mode='grayscale',
+      class_mode='binary',
+      batch_size=batch_size
+      )
+test = test_data_gen.flow_from_directory(
+      test_path,
+      target_size=(img_height, img_width),
+      color_mode='grayscale',
+      shuffle=False, 
+    #si setta shuffle=False per non avere problemi di indicizzazione quando si va a fare il test
+      class_mode='binary',
+      batch_size=batch_size
+      )
+valid = test_data_gen.flow_from_directory(
+      valid_path,
+      target_size=(img_height, img_width),
+      color_mode='grayscale',
+      class_mode='binary', 
+      batch_size=batch_size
+      )
+
+#codice per stampare alcuni campioni del set di training che andranno in input alla rete
+plt.figure(figsize=(12, 12))
+for i in range(0, 10):
+    plt.subplot(2, 5, i+1)
+    for X_batch, Y_batch in train:
+        image = X_batch[0]        
+        dic = {0:'NORMALE', 1:'POLMONITE'}
+        plt.title(dic.get(Y_batch[0]))
+        plt.axis('off')
+        plt.imshow(np.squeeze(image),cmap='gray',interpolation='nearest')
+        break
+plt.tight_layout()
+plt.show()
+
+#Si definisce il modello
+cnn = Sequential()
+cnn.add(Conv2D(32, (3, 3), activation="relu", input_shape=(img_width, img_height, channels)))
+cnn.add(MaxPooling2D(pool_size = (2, 2)))
+cnn.add(Conv2D(32, (3, 3), activation="relu", input_shape=(img_width, img_height, channels)))
+cnn.add(MaxPooling2D(pool_size = (2, 2)))
+cnn.add(Conv2D(32, (3, 3), activation="relu", input_shape=(img_width, img_height,  channels)))
+cnn.add(MaxPooling2D(pool_size = (2, 2)))
+cnn.add(Conv2D(64, (3, 3), activation="relu", input_shape=(img_width, img_height, channels)))
+cnn.add(MaxPooling2D(pool_size = (2, 2)))
+cnn.add(Conv2D(64, (3, 3), activation="relu", input_shape=(img_width, img_height, channels)))
+cnn.add(MaxPooling2D(pool_size = (2, 2)))
+cnn.add(Flatten())
+cnn.add(Dense(activation = 'relu', units = 128))
+cnn.add(Dense(activation = 'relu', units = 64))
+cnn.add(Dense(activation = 'sigmoid', units = 1))
+#Si compila il modello applicando l'ottimizzatore e la funzione di errore 
+#sulla quale si basa l'algoritmo di backpropagation
+cnn.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
+cnn.summary()
+
+#Si definiscono le callbacks che il sistema sfrutta nel training
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, TensorBoard, ModelCheckpoint
+early = EarlyStopping(monitor= 'val_loss', mode='min', patience=5)
+learning_rate_reduction = ReduceLROnPlateau(monitor='val_loss', patience = 2, verbose=1,factor=0.3,min_delta = 0.001, min_lr=0.000001)
+checkpoint = ModelCheckpoint("my model.h5",monitor="val_accuracy",save_best_only=True,mode="auto",verbose=1)
+callbacks_list = [ early, learning_rate_reduction, checkpoint]
+
+#Si vanno ad assegnare i valori dei pesi per ogni classe a seconda della cardinalita 
+#degli elementi presenti in essa. 
+#Dunque il modello assegna automaticamente i pesi della classe in maniera inversamente
+#proporzionale alla frequenza degli elementi in una classe
+weights = compute_class_weight('balanced', np.unique(train.classes), train.classes)
+cw = dict(zip( np.unique(train.classes), weights))
+print(cw)
+
+#Si fa il fitting
+history = cnn.fit(train,epochs=hyper_epochs, validation_data=valid, class_weight=cw, callbacks=callbacks_list)
+
+#Si crea un grafico dell'andamento 
+pd.DataFrame(cnn.history.history).plot()
+
+#Si controlla l'accuratezza del test
+test_accu = cnn.evaluate(test)
+print('The testing accuracy is :',test_accu[1]*100, '%')
+test_accu = cnn.evaluate(train)
+print('The training accuracy is :',test_accu[1]*100, '%')
+test_accu = cnn.evaluate(valid)
+print('The validation accuracy is :',test_accu[1]*100, '%')
+
+#Si fanno le previsioni
+preds = cnn.predict(test,verbose=1)
+predictions = preds.copy()
+predictions[predictions <= 0.5] = 0
+predictions[predictions > 0.5] = 1
+
+#si genera la matrice di confusione
+cm = pd.DataFrame(data=confusion_matrix(test.classes, predictions, labels=[0, 1]),index=["Sano effettivo", "Polmonite effettiva"],
+columns=["Previsto sano", "Previsto con polmonite"])
+sns.heatmap(cm,annot=True,fmt="d")
+
+#si stampa un report di classificazione
+print(classification_report(y_true=test.classes,y_pred=predictions,target_names =['NORMALE','POLMONITE']))
+
+#Si stampano alcuni esempi di immagini con associata la classe prevista e la probabilita con cui 
+#la previsione sia corretta, associata alla diagnosi effettiva (La figura 5.6 mostra l'output ottenuto)
+test.reset()
+x=np.concatenate([test.next()[0] for i in range(test.__len__())])
+y=np.concatenate([test.next()[1] for i in range(test.__len__())])
+print(x.shape)
+print(y.shape)#this little code above extracts the images from test Data iterator without shuffling the sequence
+# x contains image array and y has labels 
+dic = {0:'SANO', 1:'POLMONITE'}
+plt.figure(figsize=(20,20))
+for i in range(0+228, 9+228):
+  plt.subplot(3, 3, (i-228)+1)
+  if preds[i, 0] >= 0.5: 
+      out = ('{:.2%} di probabilita che sia Polmonite'.format(preds[i][0]))
+      
+      
+  else: 
+      out = ('{:.2%} di probabilita che sia un soggetto sano'.format(1-preds[i][0]))
+  plt.title(out+"\n Caso effettivo : "+ dic.get(y[i]))    
+  plt.imshow(np.squeeze(x[i]))
+plt.axis('off')
+plt.show()
+
+
+data = []     # archivia tutte le batch di immagini prodotte nell'insieme di test
+labels = []   # archivia le label associate alle immagini dell'array sopra
+max_iter = 100  # massimo numero di iterazioni, a seconda della batch size e della dimensione del dataset
+i = 0
+for d, l in test:
+    data.append(d)
+    labels.append(l)
+    i += 1
+    if i == max_iter:
+        break
+data = np.array(data)
+data = np.reshape(data, (data.shape[0]*data.shape[1],) + data.shape[2:])
+
+labels = np.array(labels)
+labels = np.reshape(labels, (labels.shape[0]*labels.shape[1],) + labels.shape[2:])
+
+# si calcolano i falsi positivi e i falsi negativi per produrre la caratteristica ROC
+preds = cnn.predict(data)
+preds[preds <= 0.5] = 0
+preds[preds > 0.5] = 1
+
+fpr, tpr, threshold = metrics.roc_curve(labels, preds)
+roc_auc = metrics.auc(fpr, tpr)
+
+plt.title('Receiver Operating Characteristic')
+plt.plot(fpr, tpr, 'b', label = 'AUC = %0.2f' % roc_auc)
+plt.legend(loc = 'lower right')
+plt.plot([0, 1], [0, 1],'r--')
+plt.xlim([0, 1])
+plt.ylim([0, 1])
+plt.ylabel('True Positive Rate ')
+plt.xlabel('False Positive Rate')
+plt.show()
+\end{lstlisting}
+
+
+\begin{lstlisting}[basicstyle=\tiny, language=Python, caption=Esempio di implementazione di AlexNet per la classificazione di RM con l'aggiunta di rumore al set di training.~\cite{dsbrain} ]
+#Si importano le librerie principali
+from keras.callbacks import TensorBoard
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import cv2
+import tensorflow as tf
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tqdm import tqdm
+import os
+from pathlib import Path
+import itertools
+from sklearn.utils import shuffle
+from keras import Sequential
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.applications import EfficientNetB0
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, TensorBoard, ModelCheckpoint
+from sklearn.metrics import classification_report,confusion_matrix
+import ipywidgets as widgets
+import io
+from keras.layers import Flatten,Dense,BatchNormalization,Activation,Dropout
+from tensorflow.keras.utils import to_categorical
+from PIL import Image
+from IPython.display import display,clear_output
+from warnings import filterwarnings
+from tensorflow import keras 
+from tensorflow.keras import layers
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense,Conv2D,Flatten,MaxPooling2D, Input
+from tensorflow.keras.callbacks import EarlyStopping,ReduceLROnPlateau
+from keras.regularizers import l2
+from tensorflow.keras import Model
+import numpy as np
+import cv2
+import glob 
+
+
+#Si definiscono array di colori che vengono raggruppati in scuri, rossi e verdi
+# e utilizzati in seguito per generare la matrice di confusione
+colors_dark = ["#1F1F1F", "#313131", '#636363', '#AEAEAE', '#DADADA']
+colors_red = ["#331313", "#582626", '#9E1717', '#D35151', '#E9B4B4']
+colors_green = ['#01411C','#4B6F44','#4F7942','#74C365','#D0F0C0']
+
+sns.palplot(colors_dark)
+sns.palplot(colors_green)
+sns.palplot(colors_red)
+
+#si scrivono le labels sulle quale si vuol fare la classificazione
+labels = ['glioma_tumor','meningioma_tumor','no_tumor','pituitary_tumor']
+
+#Si iniziano a leggere tutte le immagini e ad aggiungerle tramite una lista
+#e si convertono in un numpy array dopo averle rese tutte della stessa grandezza
+X_train = []
+y_train = []
+batch_size = 32
+image_size = 150 
+hyper_epochs = 40
+for i in labels:
+    folderPath = os.path.join('/content/brain-tumor-classification-mri','Training',i)
+    for j in tqdm(os.listdir(folderPath)):
+        img = cv2.imread(os.path.join(folderPath,j))
+        img = cv2.resize(img,(image_size, image_size))
+        X_train.append(img)
+        y_train.append(i)
+#opencv permette di di leggere l'immagine e restituisce un numpy array
+for i in labels:
+    folderPath = os.path.join('/content/brain-tumor-classification-mri','Testing',i)
+    for j in tqdm(os.listdir(folderPath)):
+        img = cv2.imread(os.path.join(folderPath,j))
+        img = cv2.resize(img,(image_size,image_size))
+        X_train.append(img)
+        y_train.append(i)
+#si convertono in numpy array
+X_train = np.array(X_train)
+y_train = np.array(y_train)
+X_train.shape
+
+#Si suddivide il dataset in un set di training X_train e uno di testing X_test in maniera casuale
+# e ad ogni immagine si associa la propria label y_train, y_test
+X_train,X_test, y_train, y_test = train_test_split(X_train, y_train,train_size=0.9,random_state=101)
+
+#Si mostra un campione per ogni label (l'output lo si puo vedere nella figura 5.7)
+k=0
+fig, ax = plt.subplots(1,4,figsize=(20,20))
+fig.text(s='Immagini campione per ogni label',size=18,fontweight='bold',
+             fontname='monospace',color=colors_dark[1],y=0.62,x=0.4,alpha=0.8)
+for i in labels:
+    j=0
+    while True :
+        if y_train[j]==i:
+            ax[k].imshow(X_train[j])
+            ax[k].set_title(y_train[j])
+            ax[k].axis('off')
+            k+=1
+            break
+        j+=1
+
+
+#si aggiunge rumore gaussiano alle immagini del set di training
+mean = 0
+std = 2
+gaussian = np.random.normal(mean, std, (image_size, image_size,3)) 
+X_train = X_train + gaussian
+X_train = np.clip(X_train, 0, 255)
+
+#come da prassi si fa un rescaling delle immagini
+datagen = ImageDataGenerator(rescale = 1./255)
+val_data_gen = ImageDataGenerator(rescale = 1./255)
+test_data_gen = ImageDataGenerator(rescale = 1./255)
+
+
+#si convertono gli indici associati alle label in codice one-hot cosi che si possa 
+#applicare la funzione di entropia categorica come funzione di perdita
+y_train_new = []
+for i in y_train:
+y_train_new.append(labels.index(i))
+y_train = y_train_new
+y_train = tf.keras.utils.to_categorical(y_train)
+
+
+y_test_new = []
+for i in y_test:
+y_test_new.append(labels.index(i))
+y_test = y_test_new
+y_test = tf.keras.utils.to_categorical(y_test)
+
+#Si definiscono le tuple con le coppie (X,y) per il training, testing e validation, dove in questo caso il set di testing 
+#coincide con quello di validation
+train = datagen.flow(X_train, y_train, batch_size=batch_size)
+test = test_data_gen.flow(X_test, y_test, batch_size=batch_size, shuffle=False)
+valid = test_data_gen.flow(X_test, y_test, batch_size=batch_size)
+
+#Si stampano le immagini affette dal rumore (vedi Figura 5.12)
+plt.figure(figsize=(12, 12))
+for i in range(0, 10):
+    plt.subplot(2, 5, i+1)
+    for X_batch, Y_batch in train:
+        image = X_batch[0]        
+        dic = {0:'Glioma', 1:'Meningioma',2:'No', 3:'Pituitary'}
+        plt.title(dic.get(Y_batch[0][0]))
+        plt.axis('off')  
+        plt.imshow(np.squeeze(image),cmap='gray',interpolation='nearest')
+        break
+plt.tight_layout()
+plt.show()
+
+
+#Si definisce il modello utilizzato
+model = keras.models.Sequential([
+    keras.layers.Conv2D(filters=96, kernel_size=(11,11), strides=(4,4), activation='relu', input_shape=(image_size,image_size,3)),
+    keras.layers.BatchNormalization(),
+    keras.layers.MaxPool2D(pool_size=(3,3), strides=(2,2)),
+    keras.layers.Conv2D(filters=256, kernel_size=(5,5), strides=(1,1), activation='relu', padding="same"),
+    keras.layers.BatchNormalization(),
+    keras.layers.MaxPool2D(pool_size=(3,3), strides=(2,2)),
+    keras.layers.Conv2D(filters=384, kernel_size=(3,3), strides=(1,1), activation='relu', padding="same"),
+    keras.layers.BatchNormalization(),
+    keras.layers.Conv2D(filters=384, kernel_size=(3,3), strides=(1,1), activation='relu', padding="same"),
+    keras.layers.BatchNormalization(),
+    keras.layers.Conv2D(filters=256, kernel_size=(3,3), strides=(1,1), activation='relu', padding="same"),
+    keras.layers.BatchNormalization(),
+    keras.layers.MaxPool2D(pool_size=(3,3), strides=(2,2)),
+    keras.layers.Flatten(),
+    keras.layers.Dense(4096, activation='relu'),
+    keras.layers.Dropout(0.5),
+    keras.layers.Dense(4096, activation='relu'),
+    keras.layers.Dropout(0.5), 
+    keras.layers.Dense(1000, activation='relu'),
+    keras.layers.Dropout(0.5),
+    keras.layers.Dense(4, activation='softmax')
+])
+model.compile(loss=keras.losses.categorical_crossentropy,
+              optimizer=keras.optimizers.Adam(),
+              metrics=['accuracy'])
+
+model.summary()
+
+#si salva il modello in un preciso file e si definisce la funzione che regola il learning rate
+checkpoint = ModelCheckpoint("Model for brain tumor classification.h5",monitor="val_accuracy",save_best_only=True,mode="auto",verbose=1)
+reduce_lr = ReduceLROnPlateau(monitor = 'val_accuracy', factor = 0.3, patience = 2, min_delta = 0.001,min_lr= 0.000001,
+                              mode='auto',verbose=1)
+
+#si fa il training sul modello, utilizzando come set di training quello affetto da rumore
+hist = model.fit(X_train,y_train, epochs=hyper_epochs, validation_data= (X_test,y_test),callbacks=[checkpoint,reduce_lr])
+
+
+#Si mostra l'andamento del training per controllare se vi e stato overfitting  underfitting
+filterwarnings('ignore') 
+ 
+epochs = [i for i in range(hyper_epochs)]
+fig, ax = plt.subplots(1,2,figsize=(14,7))
+train_acc = hist.history['accuracy']
+train_loss = hist.history['loss'] 
+val_acc = hist.history['val_accuracy']
+val_loss = hist.history['val_loss']
+ 
+fig.text(s='Epochs vs. Training and Validation Accuracy/Loss',size=18,fontweight='bold',
+             fontname='monospace',color=colors_dark[1],y=1,x=0.28,alpha=0.8)
+
+sns.despine()
+ax[0].plot(epochs, train_acc, marker='o',markerfacecolor=colors_green[2],color=colors_green[3],
+           label = 'Training Accuracy')
+ax[0].plot(epochs, val_acc, marker='o',markerfacecolor=colors_red[2],color=colors_red[3],
+           label = 'Validation Accuracy') 
+ax[0].legend(frameon=False)
+ax[0].set_xlabel('Epochs') 
+ax[0].set_ylabel('Accuracy')
+
+sns.despine()
+ax[1].plot(epochs, train_loss, marker='o',markerfacecolor=colors_green[2],color=colors_green[3],
+           label ='Training Loss')
+ax[1].plot(epochs, val_loss, marker='o',markerfacecolor=colors_red[2],color=colors_red[3],
+           label = 'Validation Loss')
+ax[1].legend(frameon=False)
+ax[1].set_xlabel('Epochs')
+ax[1].set_ylabel('Training & Validation Loss')
+
+fig.show()
+
+#Si controllano le previsioni sul set di testing e si fa un classification report
+pred = model2.predict(test)
+pred = np.argmax(pred,axis=1)
+y_test_new = np.argmax(y_test,axis=1)
+print(classification_report(y_test_new,pred,target_names =['GLIOMA','MENINGIOMA','NO TUMOR', 'PITUITARY']))
+
+#Si genera la matrice di confusione
+fig,ax=plt.subplots(1,1,figsize=(14,7))
+sns.heatmap(confusion_matrix(y_test_new,pred),ax=ax,xticklabels=labels,yticklabels=labels,annot=True,
+           cmap=colors_green[::-1],alpha=0.7,linewidths=2,linecolor=colors_dark[3])
+fig.text(s='Heatmap of the Confusion Matrix',size=18,fontweight='bold',
+             fontname='monospace',color=colors_dark[1],y=0.92,x=0.28,alpha=0.8)
+
+plt.show()
+
+#Si genera la curva ROC andando a rappresentare la bonta della classificazione con la tecnica One vs. All
+#cioe andando a controllare quanto la rete e in grado di afferrare completamente nuovi esempi per quella classe
+#rispetto a tutte le altre senza commettere errori
+import scikitplot as skplt
+import matplotlib.pyplot as plt
+from sklearn.metrics import roc_curve, roc_auc_score
+import matplotlib.pyplot as plt 
+from sklearn.preprocessing import LabelBinarizer
+from sklearn.metrics import roc_curve, auc, roc_auc_score
+
+
+fig, c_ax = plt.subplots(1,1, figsize = (12, 8))
+
+# funzione per calcolare la curva roc per ogni classe
+def multiclass_roc_auc_score(y_test, pred, average="macro"):
+    lb = LabelBinarizer()
+    lb.fit(y_test)
+    y_test = lb.transform(y_test)
+    y_pred = lb.transform(pred)
+
+    for (idx, c_label) in enumerate(labels):
+        fpr, tpr, thresholds = roc_curve(y_test[:,idx].astype(int), y_pred[:,idx])
+        c_ax.plot(fpr, tpr, label = '%s (AUC:%0.2f)'  % (c_label, auc(fpr, tpr)))
+    c_ax.plot(fpr, fpr, 'b-', label = 'Random Guessing')
+    return roc_auc_score(y_test, y_pred, average=average)
+
+
+print('ROC AUC score:', multiclass_roc_auc_score(y_test, pred))
+
+c_ax.legend()
+c_ax.set_xlabel('False Positive Rate')
+c_ax.set_ylabel('True Positive Rate')
+plt.show()
+
+#Si stampano alcuni campioni di immagine con la probabilita associata sulla
+# previsione fatta per essi, confrontandola con la diagnosi effettiva.
+pred1 = model.predict(test)
+pred1 = pred1
+pred2 = np.argmax(pred1,axis=1)
+y_test_new2 = np.argmax(y_test,axis=1)
+print(y_test.shape)
+x=np.concatenate([test.next()[0] for i in range(test.__len__())])
+y=np.concatenate([test.next()[1] for i in range(test.__len__())])
+print(x.shape)
+print(y.shape)#this little code above extracts the images from test Data iterator without shuffling the sequence
+print(pred1)
+print(pred2)
+print(y_test_new2)
+print(y[1])
+# x contains image array and y has labels 
+dic = {0:'Glioma', 1:'Meningioma',2:'Sano',3: 'tumore ipofisario' }
+plt.figure(figsize=(20,20))
+for i in range(0+120, 9+120):
+  plt.subplot(3, 3, (i-120)+1)
+  if pred2[i] == 0: 
+      out = ('{:.2%} di probabilita che sia Glioma'.format(pred1[i][0]))
+      
+      
+  elif pred2[i] == 1:
+      out = ('{:.2%} di probabilita che sia Meningioma'.format(pred1[i][1]))
+  elif pred2[i] == 2:
+      out = ('{:.2%} di probabilita che sia sano'.format(pred1[i][2]))
+  else: 
+      out = ('{:.2%} di probabilita che sia tumore ipofisario'.format(pred1[i][3]))
+  
+  plt.title(out+"\n Caso effettivo : "+ dic.get(np.argmax(y[i])))    
+  plt.imshow(np.squeeze(x[i]))
+plt.axis('off')
+plt.show()
+\end{lstlisting}
