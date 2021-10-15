@@ -1,0 +1,10 @@
+\frametitle{Iperparametri utilizzati e fase di fitting}
+		Ogni training è stato eseguito con tali iperparametri:
+		\begin{itemize}
+			\item \lstinline[language = Python]{image_height} pari a \textbf{150}, \textbf{224};
+			\item \lstinline[language = Python]{image_width} pari a \textbf{150}, \textbf{224};
+			\item \lstinline[language = Python]{epochs} = \textbf{40};
+			\item \lstinline[language = Python]{batch_size} = \textbf{32};
+			\item \lstinline[language = Python]{hyper_channels} = \textbf{3}.
+			\item Ottimizzatore Adam (learning rate iniziale pari a \textbf{0.01})
+		\end{itemize}
