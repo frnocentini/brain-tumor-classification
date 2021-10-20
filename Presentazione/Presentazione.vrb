@@ -1,0 +1,7 @@
+\frametitle{Creazione dei set di training e testing}
+		Dopo aver letto e ridimensionato tutte le immagini, queste vengono inserite nel
+		Numpy array \textbf{X\_train} associate alla label corrispodente in \textbf{y\_train}
+		codificata in codice \textbf{one-hot}.
+		L'utilizzo della funzione \lstinline{train_test_split()} ha permesso di creare
+		un set di testing che fosse il 10\%  di quello di training.\\
+		Per ogni coppia \textbf{(X\_train, y\_train)} sono stati eseguiti 5 training per ciascun modello.

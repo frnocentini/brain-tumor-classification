@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>pandas (software) - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"cb35bc5b-aec3-4c08-8d4d-6a6f0b522628","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Pandas_(software)","wgTitle":"Pandas (software)","wgCurRevisionId":1048254988,"wgRevisionId":1048254988,"wgArticleId":38833779,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","All articles with unsourced statements","Articles with unsourced statements from March 2021","Use dmy dates from August 2019","Free statistical software","Python (programming language) scientific libraries"
+,"Software using the BSD license"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Pandas_(software)","wgRelevantArticleId":38833779,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgEditSubmitButtonLabelPublish":!0,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":!0,"wgGENewcomerTasksGuidanceEnabled":!0,"wgGEAskQuestionEnabled":!1,"wgGELinkRecommendationsFrontendEnabled":!1,"wgCentralAuthMobileDomain":!1,"wgWikibaseItemId":
+"Q15967387"};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns",
+"ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.3"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png"/>
+<meta property="og:title" content="pandas (software) - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Pandas_(software)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Pandas_(software)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Pandas_(software)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Pandas_(software)"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Pandas_software rootpage-Pandas_software skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >pandas (software)</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Python library for data analysis</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <a href="/wiki/Pandora_Archive#Software" class="mw-redirect" title="Pandora Archive">PANDAS</a>, the Australian archival management system used for the Pandora Archive.</div>
+<table class="infobox vevent"><caption class="infobox-title summary">pandas</caption><tbody><tr><td colspan="2" class="infobox-image"><a href="/wiki/File:Pandas_logo.svg" class="image"><img alt="Pandas logo.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/300px-Pandas_logo.svg.png" decoding="async" width="300" height="121" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/450px-Pandas_logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png 2x" data-file-width="512" data-file-height="207" /></a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Programmer" title="Programmer">Original author(s)</a></th><td class="infobox-data"><a href="/wiki/Wes_McKinney" title="Wes McKinney">Wes McKinney</a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Programmer" title="Programmer">Developer(s)</a></th><td class="infobox-data">Community</td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;">Initial release</th><td class="infobox-data">11&#160;January 2008<span class="noprint">&#59;&#32;13 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2008-01-11</span>)</span><sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="Github repository commit history indicates July 31, 2009 (March 2021)">citation needed</span></a></i>&#93;</sup></td></tr><tr style="display: none;"><td colspan="2" class="infobox-full-data"></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th><td class="infobox-data"><div style="margin:0px;">1.3.0<sup id="cite_ref-wikidata-bfe7473a9e48f27d79abd2adf9d2be061f688f88-v3_1-0" class="reference"><a href="#cite_note-wikidata-bfe7473a9e48f27d79abd2adf9d2be061f688f88-v3-1">&#91;1&#93;</a></sup>
+   / 2 July 2021<span class="noprint">&#59;&#32;3 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2 July 2021</span>)</span></div></td></tr><tr style="display:none"><td colspan="2">
+</td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Repository_(version_control)" title="Repository (version control)">Repository</a></th><td class="infobox-data"><div class="plainlist"><ul><li><span class="url"><a rel="nofollow" class="external text" href="https://github.com/pandas-dev/pandas">github<wbr />.com<wbr />/pandas-dev<wbr />/pandas</a></span> <a href="https://www.wikidata.org/wiki/Q15967387#P1324" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" style="vertical-align: text-top" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></li></ul>
+</div></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;">Written in</th><td class="infobox-data"><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/Cython" title="Cython">Cython</a>, <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th><td class="infobox-data"><a href="/wiki/Cross-platform" class="mw-redirect" title="Cross-platform">Cross-platform</a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Software_categories#Categorization_approaches" title="Software categories">Type</a></th><td class="infobox-data"><a href="/wiki/List_of_numerical_analysis_software" class="mw-redirect" title="List of numerical analysis software">Technical computing</a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th><td class="infobox-data"><a href="/wiki/BSD-new" class="mw-redirect" title="BSD-new">New BSD License</a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;">Website</th><td class="infobox-data"><span class="url"><a rel="nofollow" class="external text" href="https://pandas.pydata.org">pandas<wbr />.pydata<wbr />.org</a></span></td></tr></tbody></table>
+<p><b>pandas</b> is a <a href="/wiki/Software_library" class="mw-redirect" title="Software library">software library</a> written for the <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python programming language</a> for data manipulation and <a href="/wiki/Data_analysis" title="Data analysis">analysis</a>. In particular, it offers <a href="/wiki/Data_structure" title="Data structure">data structures</a> and operations for manipulating numerical tables and <a href="/wiki/Time_series" title="Time series">time series</a>. It is <a href="/wiki/Free_software" title="Free software">free software</a> released under the <a href="/wiki/3-clause_BSD_license" class="mw-redirect" title="3-clause BSD license">three-clause BSD license</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> The name is derived from the term "<a href="/wiki/Panel_data" title="Panel data">panel data</a>", an <a href="/wiki/Econometrics" title="Econometrics">econometrics</a> term for <a href="/wiki/Data_set" title="Data set">data sets</a> that include observations over multiple time periods for the same individuals.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> Its name is a play on the phrase "Python data analysis" itself.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> <a href="/wiki/Wes_McKinney" title="Wes McKinney">Wes McKinney</a> started building what would become pandas at <a href="/wiki/AQR_Capital" title="AQR Capital">AQR Capital</a> while he was a researcher there from 2007 to 2010.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Library_features"><span class="tocnumber">1</span> <span class="toctext">Library features</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Dataframes"><span class="tocnumber">2</span> <span class="toctext">Dataframes</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Timeline:[13]"><span class="tocnumber">3.1</span> <span class="toctext">Timeline:<sup>&#91;13&#93;</sup></span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Library_features">Library features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pandas_(software)&amp;action=edit&amp;section=1" title="Edit section: Library features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>DataFrame <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object</a> for data manipulation with integrated indexing.</li>
+<li>Tools for reading and writing data between in-memory <a href="/wiki/Data_structure" title="Data structure">data structures</a> and different <a href="/wiki/File_format" title="File format">file formats</a>.</li>
+<li>Data alignment and integrated handling of missing data.</li>
+<li>Reshaping and pivoting of data sets.</li>
+<li>Label-based slicing, fancy indexing, and subsetting of large data sets.</li>
+<li>Data structure column insertion and deletion.</li>
+<li>Group by engine allowing split-apply-combine operations on data sets.</li>
+<li>Data set merging and joining.</li>
+<li>Hierarchical axis indexing to work with high-dimensional data in a lower-dimensional data structure.</li>
+<li>Time series-functionality: Date range generation<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> and frequency conversions, moving window <a href="/wiki/Statistics" title="Statistics">statistics</a>, moving window <a href="/wiki/Linear_regression" title="Linear regression">linear regressions</a>, date shifting and lagging.</li>
+<li>Provides data filtration.</li></ul>
+<p>The library is highly optimized for performance, with critical code paths written in <a href="/wiki/Cython" title="Cython">Cython</a> or <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Dataframes">Dataframes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pandas_(software)&amp;action=edit&amp;section=2" title="Edit section: Dataframes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Pandas is mainly used for <a href="/wiki/Data_analysis" title="Data analysis">data analysis</a>. Pandas allows importing data from various file formats such as <a href="/wiki/Comma-separated_values" title="Comma-separated values">comma-separated values</a>, <a href="/wiki/JSON" title="JSON">JSON</a>, <a href="/wiki/SQL" title="SQL">SQL</a>, and <a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Microsoft Excel</a>.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> Pandas allows various data manipulation operations such as merging,<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> reshaping,<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> selecting,<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> as well as <a href="/wiki/Data_cleaning" class="mw-redirect" title="Data cleaning">data cleaning</a>, and <a href="/wiki/Data_wrangling" title="Data wrangling">data wrangling</a> features.
+</p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pandas_(software)&amp;action=edit&amp;section=3" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Developer <a href="/wiki/Wes_McKinney" title="Wes McKinney">Wes McKinney</a> started working on pandas in 2008 while at <a href="/wiki/AQR_Capital" title="AQR Capital">AQR Capital Management</a> out of the need for a high performance, flexible tool to perform <a href="/wiki/Quantitative_analysis_(finance)" title="Quantitative analysis (finance)">quantitative analysis</a> on financial data. Before leaving AQR he was able to convince management to allow him to <a href="/wiki/Open_source" title="Open source">open source</a> the library.
+</p><p>Another AQR employee, Chang She, joined the effort in 2012 as the second major contributor to the library.
+</p><p>In 2015, pandas signed on as a fiscally sponsored project of <a href="/w/index.php?title=NumFOCUS&amp;action=edit&amp;redlink=1" class="new" title="NumFOCUS (page does not exist)">NumFOCUS</a>, a <a href="/wiki/501(c)(3)_organization" title="501(c)(3) organization">501(c)(3) nonprofit charity</a> in the United States.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
+</p>
+<h3><span id="Timeline:.5B13.5D"></span><span class="mw-headline" id="Timeline:[13]">Timeline:<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pandas_(software)&amp;action=edit&amp;section=4" title="Edit section: Timeline:[13]">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li>2008: Development of <i>pandas</i> started</li>
+<li>2009: <i>pandas</i> becomes open source</li>
+<li>2012: First edition of <i>Python for Data Analysis</i> is published</li>
+<li>2015: <i>pandas</i> becomes a NumFOCUS sponsored project</li>
+<li>2018: First in-person core developer sprint</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pandas_(software)&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Matplotlib" title="Matplotlib">matplotlib</a></li>
+<li><a href="/wiki/NumPy" title="NumPy">NumPy</a></li>
+<li><a href="/wiki/SciPy" title="SciPy">SciPy</a></li>
+<li><a href="/wiki/R_(programming_language)" title="R (programming language)">R (programming language)</a></li>
+<li><a href="/wiki/Scikit-learn" title="Scikit-learn">Scikit-learn</a></li>
+<li><a href="/wiki/Statsmodels" title="Statsmodels">statsmodels</a></li>
+<li><a href="/wiki/List_of_numerical_analysis_software" class="mw-redirect" title="List of numerical analysis software">List of numerical analysis software</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pandas_(software)&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-wikidata-bfe7473a9e48f27d79abd2adf9d2be061f688f88-v3-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-wikidata-bfe7473a9e48f27d79abd2adf9d2be061f688f88-v3_1-0">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r999302996">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://github.com/pandas-dev/pandas/releases/tag/v1.3.0">"Release 1.3.0"</a>. 2 July 2021<span class="reference-accessdate">. Retrieved <span class="nowrap">22 July</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Release+1.3.0&amp;rft.date=2021-07-02&amp;rft_id=https%3A%2F%2Fgithub.com%2Fpandas-dev%2Fpandas%2Freleases%2Ftag%2Fv1.3.0&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://pandas.pydata.org/pandas-docs/stable/overview.html#license">"License – Package overview – pandas 1.0.0 documentation"</a>. <i>pandas</i>. 28 January 2020<span class="reference-accessdate">. Retrieved <span class="nowrap">30 January</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=pandas&amp;rft.atitle=License+%E2%80%93+Package+overview+%E2%80%93+pandas+1.0.0+documentation&amp;rft.date=2020-01-28&amp;rft_id=https%3A%2F%2Fpandas.pydata.org%2Fpandas-docs%2Fstable%2Foverview.html%23license&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFWes_McKinney2011" class="citation web cs1">Wes McKinney (2011). <a rel="nofollow" class="external text" href="https://www.dlr.de/sc/Portaldata/15/Resources/dokumente/pyhpc2011/submissions/pyhpc2011_submission_9.pdf">"pandas: a Foundational Python Library for Data Analysis and Statistics"</a> <span class="cs1-format">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2 August</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=pandas%3A+a+Foundational+Python+Library+for+Data+Analysis+and+Statistics&amp;rft.date=2011&amp;rft.au=Wes+McKinney&amp;rft_id=https%3A%2F%2Fwww.dlr.de%2Fsc%2FPortaldata%2F15%2FResources%2Fdokumente%2Fpyhpc2011%2Fsubmissions%2Fpyhpc2011_submission_9.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFMcKinney2017" class="citation book cs1">McKinney, Wes (2017). <i>Python for Data Analysis, Second Edition</i>. O'Reilly Media. p.&#160;5. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781491957660" title="Special:BookSources/9781491957660"><bdi>9781491957660</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Python+for+Data+Analysis%2C+Second+Edition&amp;rft.pages=5&amp;rft.pub=O%27Reilly+Media&amp;rft.date=2017&amp;rft.isbn=9781491957660&amp;rft.aulast=McKinney&amp;rft.aufirst=Wes&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFKopf" class="citation web cs1">Kopf, Dan. <a rel="nofollow" class="external text" href="https://qz.com/1126615/the-story-of-the-most-important-tool-in-data-science/">"Meet the man behind the most important tool in data science"</a>. <i>Quartz</i><span class="reference-accessdate">. Retrieved <span class="nowrap">17 November</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Quartz&amp;rft.atitle=Meet+the+man+behind+the+most+important+tool+in+data+science&amp;rft.aulast=Kopf&amp;rft.aufirst=Dan&amp;rft_id=https%3A%2F%2Fqz.com%2F1126615%2Fthe-story-of-the-most-important-tool-in-data-science%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.date_range.html">"pandas.date_range – pandas 1.0.0 documentation"</a>. <i>pandas</i>. 29 January 2020<span class="reference-accessdate">. Retrieved <span class="nowrap">30 January</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=pandas&amp;rft.atitle=pandas.date_range+%E2%80%93+pandas+1.0.0+documentation&amp;rft.date=2020-01-29&amp;rft_id=https%3A%2F%2Fpandas.pydata.org%2Fpandas-docs%2Fstable%2Fgenerated%2Fpandas.date_range.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://pandas.pydata.org/">"Python Data Analysis Library – pandas: Python Data Analysis Library"</a>. <i>pandas</i><span class="reference-accessdate">. Retrieved <span class="nowrap">13 November</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=pandas&amp;rft.atitle=Python+Data+Analysis+Library+%E2%80%93+pandas%3A+Python+Data+Analysis+Library&amp;rft_id=https%3A%2F%2Fpandas.pydata.org%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html">https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html</a></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html">https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html</a></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html">https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html</a></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html">https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html</a></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.numfocus.org/project/pandas/">"NumFOCUS – pandas: a fiscally sponsored project"</a>. <i>NumFOCUS</i><span class="reference-accessdate">. Retrieved <span class="nowrap">3 April</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=NumFOCUS&amp;rft.atitle=NumFOCUS+%E2%80%93+pandas%3A+a+fiscally+sponsored+project&amp;rft_id=https%3A%2F%2Fwww.numfocus.org%2Fproject%2Fpandas%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://pandas.pydata.org/about/">"pandas - Python Data Analysis Library"</a>. <i>pandas.pydata.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">29 September</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=pandas.pydata.org&amp;rft.atitle=pandas+-+Python+Data+Analysis+Library&amp;rft_id=https%3A%2F%2Fpandas.pydata.org%2Fabout%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pandas_(software)&amp;action=edit&amp;section=7" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFMcKinney2017" class="citation book cs1">McKinney, Wes (2017). <i>Python for Data Analysis&#160;: Data Wrangling with Pandas, NumPy, and IPython</i> (2nd&#160;ed.). Sebastopol: O'Reilly. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4919-5766-0" title="Special:BookSources/978-1-4919-5766-0"><bdi>978-1-4919-5766-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Python+for+Data+Analysis+%3A+Data+Wrangling+with+Pandas%2C+NumPy%2C+and+IPython&amp;rft.place=Sebastopol&amp;rft.edition=2nd&amp;rft.pub=O%27Reilly&amp;rft.date=2017&amp;rft.isbn=978-1-4919-5766-0&amp;rft.aulast=McKinney&amp;rft.aufirst=Wes&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFMolin2019" class="citation book cs1">Molin, Stefanie (2019). <i>Hands-On Data Analysis with Pandas: Efficiently perform data collection, wrangling, analysis, and visualization using Python</i>. Packt. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-7896-1532-6" title="Special:BookSources/978-1-7896-1532-6"><bdi>978-1-7896-1532-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Hands-On+Data+Analysis+with+Pandas%3A+Efficiently+perform+data+collection%2C+wrangling%2C+analysis%2C+and+visualization+using+Python&amp;rft.pub=Packt&amp;rft.date=2019&amp;rft.isbn=978-1-7896-1532-6&amp;rft.aulast=Molin&amp;rft.aufirst=Stefanie&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFChen2018" class="citation book cs1">Chen, Daniel Y. (2018). <i>Pandas for Everyone&#160;: Python Data Analysis</i>. Boston: Addison-Wesley. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-13-454693-3" title="Special:BookSources/978-0-13-454693-3"><bdi>978-0-13-454693-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Pandas+for+Everyone+%3A+Python+Data+Analysis&amp;rft.place=Boston&amp;rft.pub=Addison-Wesley&amp;rft.date=2018&amp;rft.isbn=978-0-13-454693-3&amp;rft.aulast=Chen&amp;rft.aufirst=Daniel+Y.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFVanderPlas2016" class="citation book cs1">VanderPlas, Jake (2016). "Data Manipulations with Pandas". <i>Python Data Science Handbook: Essential Tools for Working with Data</i>. O'Reilly. pp.&#160;97–216. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4919-1205-8" title="Special:BookSources/978-1-4919-1205-8"><bdi>978-1-4919-1205-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Data+Manipulations+with+Pandas&amp;rft.btitle=Python+Data+Science+Handbook%3A+Essential+Tools+for+Working+with+Data&amp;rft.pages=97-216&amp;rft.pub=O%27Reilly&amp;rft.date=2016&amp;rft.isbn=978-1-4919-1205-8&amp;rft.aulast=VanderPlas&amp;rft.aufirst=Jake&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFPathak2018" class="citation book cs1">Pathak, Chankey (2018). "Pandas Cookbook". <i>Pandas Cookbook</i>. pp.&#160;1–8.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Pandas+Cookbook&amp;rft.btitle=Pandas+Cookbook&amp;rft.pages=1-8&amp;rft.date=2018&amp;rft.aulast=Pathak&amp;rft.aufirst=Chankey&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APandas+%28software%29" class="Z3988"></span></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Pandas_(software)&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="https://pandas.pydata.org">Official website</a></span></span></li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Scientific_software_in_Python" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><style data-mw-deduplicate="TemplateStyles:r992953826">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}.mw-parser-output .infobox .navbar{font-size:100%}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:SciPy_ecosystem" title="Template:SciPy ecosystem"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;;text-decoration:inherit;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:SciPy_ecosystem" title="Template talk:SciPy ecosystem"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;;text-decoration:inherit;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:SciPy_ecosystem&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;;text-decoration:inherit;">e</abbr></a></li></ul></div><div id="Scientific_software_in_Python" style="font-size:114%;margin:0 4em">Scientific software in <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/NumPy" title="NumPy">NumPy</a></li>
+<li><a href="/wiki/SciPy" title="SciPy">SciPy</a></li>
+<li><a href="/wiki/Matplotlib" title="Matplotlib">matplotlib</a></li>
+<li><a class="mw-selflink selflink">pandas</a></li>
+<li><a href="/wiki/Scikit-learn" title="Scikit-learn">scikit-learn</a></li>
+<li><a href="/wiki/Scikit-image" title="Scikit-image">scikit-image</a></li>
+<li><a href="/wiki/Statsmodels" title="Statsmodels">statsmodels</a></li>
+<li><a href="/wiki/MayaVi" title="MayaVi">MayaVi</a></li>
+<li><i><a href="/wiki/Category:Python_(programming_language)_scientific_libraries" title="Category:Python (programming language) scientific libraries">more</a></i></li></ul>
+</div></td></tr></tbody></table></div>
+<p class="mw-empty-elt">
+</p>
+<!-- 
+NewPP limit report
+Parsed by mw1323
+Cached time: 20211008220553
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.616 seconds
+Real time usage: 0.762 seconds
+Preprocessor visited node count: 1989/1000000
+Post‐expand include size: 44581/2097152 bytes
+Template argument size: 4123/2097152 bytes
+Highest expansion depth: 21/40
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 40954/5000000 bytes
+Lua time usage: 0.379/10.000 seconds
+Lua memory usage: 9052077/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  714.328      1 -total
+ 55.78%  398.442      2 Template:Infobox
+ 53.62%  383.004      1 Template:Infobox_software
+ 27.97%  199.793      1 Template:Infobox_software/simple
+ 26.93%  192.368      4 Template:Wikidata
+ 12.18%   86.975      1 Template:Short_description
+ 10.56%   75.444      1 Template:Reflist
+  7.86%   56.165      1 Template:Citation_needed
+  6.79%   48.483      2 Template:Start_date_and_age
+  6.47%   46.217      1 Template:SciPy_ecosystem
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:38833779-0!canonical and timestamp 20211008220552 and revision id 1048254988. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Pandas_(software)&amp;oldid=1048254988">https://en.wikipedia.org/w/index.php?title=Pandas_(software)&amp;oldid=1048254988</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Free_statistical_software" title="Category:Free statistical software">Free statistical software</a></li><li><a href="/wiki/Category:Python_(programming_language)_scientific_libraries" title="Category:Python (programming language) scientific libraries">Python (programming language) scientific libraries</a></li><li><a href="/wiki/Category:Software_using_the_BSD_license" title="Category:Software using the BSD license">Software using the BSD license</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_March_2021" title="Category:Articles with unsourced statements from March 2021">Articles with unsourced statements from March 2021</a></li><li><a href="/wiki/Category:Use_dmy_dates_from_August_2019" title="Category:Use dmy dates from August 2019">Use dmy dates from August 2019</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Pandas+%28software%29" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Pandas+%28software%29" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Pandas_(software)" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Pandas_(software)" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		
+		<span>Variants</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Pandas_(software)"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Pandas_(software)&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Pandas_(software)&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		
+		<span>More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class=" vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<h3 id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Contribute</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Pandas_(software)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Pandas_(software)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Pandas_(software)&amp;oldid=1048254988" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Pandas_(software)&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Pandas_%28software%29&amp;id=1048254988&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q15967387" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<h3 id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Print/export</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Pandas_%28software%29&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Pandas_(software)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-wikibase-otherprojects" class="mw-portlet mw-portlet-wikibase-otherprojects vector-menu vector-menu-portal portal" aria-labelledby="p-wikibase-otherprojects-label" role="navigation" 
+	 >
+	<h3 id="p-wikibase-otherprojects-label" aria-label="" class="vector-menu-heading">
+		
+		<span>In other projects</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Pandas_(software)" hreflang="en"><span>Wikimedia Commons</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<h3 id="p-lang-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Languages</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%A7%D9%86%D8%AF%D8%A7_(%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A9)" title="باندا (برمجية) – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-bn mw-list-item"><a href="https://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B8_(%E0%A6%B8%E0%A6%AB%E0%A6%9F%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0)" title="পান্ডাস (সফটওয়্যার) – Bangla" lang="bn" hreflang="bn" class="interlanguage-link-target"><span>বাংলা</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Pandas_(Software)" title="Pandas (Software) – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/Pandas" title="Pandas – Estonian" lang="et" hreflang="et" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Pandas_(software)" title="Pandas (software) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%D9%86%D8%AF%D8%A7%D8%B3_(%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1)" title="پانداس (نرم‌افزار) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Pandas" title="Pandas – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-gl mw-list-item"><a href="https://gl.wikipedia.org/wiki/Pandas" title="Pandas – Galician" lang="gl" hreflang="gl" class="interlanguage-link-target"><span>Galego</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Pandas_(software)" title="Pandas (software) – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/Pandas" title="Pandas – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Pandas_(szoftver)" title="Pandas (szoftver) – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/Pandas" title="Pandas – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Pandas_(software)" title="Pandas (software) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/Pandas" title="Pandas – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D0%B4%D0%B0%D1%81" title="Пандас – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Pandas" title="Pandas – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/Pandas" title="Pandas – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/Pandas" title="Pandas – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q15967387#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 5 October 2021, at 01:31<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Pandas_(software)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.616","walltime":"0.762","ppvisitednodes":{"value":1989,"limit":1000000},"postexpandincludesize":{"value":44581,"limit":2097152},"templateargumentsize":{"value":4123,"limit":2097152},"expansiondepth":{"value":21,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":40954,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  714.328      1 -total"," 55.78%  398.442      2 Template:Infobox"," 53.62%  383.004      1 Template:Infobox_software"," 27.97%  199.793      1 Template:Infobox_software/simple"," 26.93%  192.368      4 Template:Wikidata"," 12.18%   86.975      1 Template:Short_description"," 10.56%   75.444      1 Template:Reflist","  7.86%   56.165      1 Template:Citation_needed","  6.79%   48.483      2 Template:Start_date_and_age","  6.47%   46.217      1 Template:SciPy_ecosystem"]},"scribunto":{"limitreport-timeusage":{"value":"0.379","limit":"10.000"},"limitreport-memusage":{"value":9052077,"limit":52428800}},"cachereport":{"origin":"mw1323","timestamp":"20211008220553","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Pandas (software)","url":"https:\/\/en.wikipedia.org\/wiki\/Pandas_(software)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q15967387","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q15967387","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2013-03-16T20:32:05Z","dateModified":"2021-10-05T01:31:37Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/ed\/Pandas_logo.svg","headline":"python library for data manipulation and analysis"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":181,"wgHostname":"mw1441"});});</script>
+</body></html>
