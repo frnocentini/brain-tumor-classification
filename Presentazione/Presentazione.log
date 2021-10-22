@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.8.19)  20 OCT 2021 23:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.8.19)  22 OCT 2021 23:09
 entering extended mode
 **c:/Users/franc/Downloads/tesi-pinesu-master(2)/tesi-pinesu-master/Presentazione/Presentazione.tex
 (c:/Users/franc/Downloads/tesi-pinesu-master(2)/tesi-pinesu-master/Presentazione/Presentazione.tex
@@ -861,112 +861,112 @@ Package pdftex.def Info: figures//imaging.png  used on input line 87.
  [3
 
  <./figures//imaging.png>]
-<figures//learning.png, id=146, 383.031pt x 313.17pt>
+<figures//virus.JPEG, id=145, 526.3665pt x 228.855pt>
+File: figures//virus.JPEG Graphic file (type jpg)
+<use figures//virus.JPEG>
+Package pdftex.def Info: figures//virus.JPEG  used on input line 106.
+(pdftex.def)             Requested size: 188.98093pt x 82.16423pt.
+ [4
+
+ <./figures//virus.JPEG>]
+<figures//learning.png, id=177, 383.031pt x 313.17pt>
 File: figures//learning.png Graphic file (type png)
 <use figures//learning.png>
-Package pdftex.def Info: figures//learning.png  used on input line 105.
+Package pdftex.def Info: figures//learning.png  used on input line 126.
 (pdftex.def)             Requested size: 188.98093pt x 154.51547pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 126.
  ("D:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 126.
  ("D:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 105.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 126.
  ("D:\Program Files\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-) [4
+) [5
 
  <./figures//learning.png>]
-<figures//confronto neurone biologico-artificiale.PNG, id=181, 870.25125pt x 300.52275pt>
+<figures//confronto neurone biologico-artificiale.PNG, id=212, 870.25125pt x 300.52275pt>
 File: figures//confronto neurone biologico-artificiale.PNG Graphic file (type png)
 <use figures//confronto neurone biologico-artificiale.PNG>
-Package pdftex.def Info: figures//confronto neurone biologico-artificiale.PNG  used on input line 118.
+Package pdftex.def Info: figures//confronto neurone biologico-artificiale.PNG  used on input line 139.
 (pdftex.def)             Requested size: 290.74263pt x 100.40175pt.
- [5
+ [6
 
  <./figures//confronto neurone biologico-artificiale.PNG>]
-<figures//schema apprendimento supervisionato.PNG, id=214, 251.7405pt x 206.57175pt>
+<figures//schema apprendimento supervisionato.PNG, id=245, 251.7405pt x 206.57175pt>
 File: figures//schema apprendimento supervisionato.PNG Graphic file (type png)
 <use figures//schema apprendimento supervisionato.PNG>
-Package pdftex.def Info: figures//schema apprendimento supervisionato.PNG  used on input line 132.
+Package pdftex.def Info: figures//schema apprendimento supervisionato.PNG  used on input line 153.
 (pdftex.def)             Requested size: 188.98093pt x 155.07341pt.
 
-Overfull \vbox (12.79349pt too high) detected at line 132
+Overfull \vbox (12.79349pt too high) detected at line 153
  []
 
-[6
+[7
 
  <./figures//schema apprendimento supervisionato.PNG>]
-<figures//cnn.PNG, id=247, 411.33675pt x 121.05225pt>
+<figures//cnn.PNG, id=279, 411.33675pt x 121.05225pt>
 File: figures//cnn.PNG Graphic file (type png)
 <use figures//cnn.PNG>
-Package pdftex.def Info: figures//cnn.PNG  used on input line 172.
+Package pdftex.def Info: figures//cnn.PNG  used on input line 193.
 (pdftex.def)             Requested size: 188.98093pt x 55.6145pt.
- [7
+ [8
 
  <./figures//cnn.PNG>]
-<figures/python.PNG, id=280, 292.09125pt x 173.64874pt>
+<figures/python.PNG, id=311, 292.09125pt x 173.64874pt>
 File: figures/python.PNG Graphic file (type png)
 <use figures/python.PNG>
-Package pdftex.def Info: figures/python.PNG  used on input line 228.
+Package pdftex.def Info: figures/python.PNG  used on input line 249.
 (pdftex.def)             Requested size: 58.14874pt x 34.56749pt.
-<figures/index.PNG, id=281, 336.25626pt x 150.5625pt>
+<figures/index.PNG, id=312, 336.25626pt x 150.5625pt>
 File: figures/index.PNG Graphic file (type png)
 <use figures/index.PNG>
-Package pdftex.def Info: figures/index.PNG  used on input line 228.
+Package pdftex.def Info: figures/index.PNG  used on input line 249.
 (pdftex.def)             Requested size: 58.14874pt x 26.03638pt.
-<figures/matplotlib.JPG, id=282, 808.01875pt x 383.4325pt>
+<figures/matplotlib.JPG, id=313, 808.01875pt x 383.4325pt>
 File: figures/matplotlib.JPG Graphic file (type jpg)
 <use figures/matplotlib.JPG>
-Package pdftex.def Info: figures/matplotlib.JPG  used on input line 228.
+Package pdftex.def Info: figures/matplotlib.JPG  used on input line 249.
 (pdftex.def)             Requested size: 58.14874pt x 27.5919pt.
-<figures//keras-tf.jpg, id=283, 604.50844pt x 336.50719pt>
+<figures//keras-tf.jpg, id=314, 604.50844pt x 336.50719pt>
 File: figures//keras-tf.jpg Graphic file (type jpg)
 <use figures//keras-tf.jpg>
-Package pdftex.def Info: figures//keras-tf.jpg  used on input line 228.
+Package pdftex.def Info: figures//keras-tf.jpg  used on input line 249.
 (pdftex.def)             Requested size: 36.34282pt x 20.23064pt.
-<figures/scikit.PNG, id=284, 311.1625pt x 163.61125pt>
+<figures/scikit.PNG, id=315, 311.1625pt x 163.61125pt>
 File: figures/scikit.PNG Graphic file (type png)
 <use figures/scikit.PNG>
-Package pdftex.def Info: figures/scikit.PNG  used on input line 228.
+Package pdftex.def Info: figures/scikit.PNG  used on input line 249.
 (pdftex.def)             Requested size: 58.14874pt x 30.57466pt.
-<figures/pandas.PNG, id=285, 1204.5pt x 486.81876pt>
+<figures/pandas.PNG, id=316, 1204.5pt x 486.81876pt>
 File: figures/pandas.PNG Graphic file (type png)
 <use figures/pandas.PNG>
-Package pdftex.def Info: figures/pandas.PNG  used on input line 228.
+Package pdftex.def Info: figures/pandas.PNG  used on input line 249.
 (pdftex.def)             Requested size: 50.87973pt x 20.56139pt.
-<figures/opncv.PNG, id=286, 1204.5pt x 1483.5425pt>
+<figures/opncv.PNG, id=317, 1204.5pt x 1483.5425pt>
 File: figures/opncv.PNG Graphic file (type png)
 <use figures/opncv.PNG>
-Package pdftex.def Info: figures/opncv.PNG  used on input line 228.
+Package pdftex.def Info: figures/opncv.PNG  used on input line 249.
 (pdftex.def)             Requested size: 36.34282pt x 44.75336pt.
-<figures/jupyter e collab.png, id=287, 503.8825pt x 268.00125pt>
+<figures/jupyter e collab.png, id=318, 503.8825pt x 268.00125pt>
 File: figures/jupyter e collab.png Graphic file (type png)
 <use figures/jupyter e collab.png>
-Package pdftex.def Info: figures/jupyter e collab.png  used on input line 228.
+Package pdftex.def Info: figures/jupyter e collab.png  used on input line 249.
 (pdftex.def)             Requested size: 43.61183pt x 23.19487pt.
 
-Overfull \vbox (10.67516pt too high) detected at line 228
+Overfull \vbox (10.67516pt too high) detected at line 249
  []
 
-[8
+[9
 
  <./figures/python.PNG> <./figures/index.PNG> <./figures/matplotlib.JPG> <./figures//keras-tf.jpg> <./figures/scikit.PNG> <./figures/pandas.PNG> <./figures/opncv.PNG> <./figures/jupyter e collab.png (PNG copy)>]
-<figures//virus.JPEG, id=323, 526.3665pt x 228.855pt>
-File: figures//virus.JPEG Graphic file (type jpg)
-<use figures//virus.JPEG>
-Package pdftex.def Info: figures//virus.JPEG  used on input line 251.
-(pdftex.def)             Requested size: 188.98093pt x 82.16423pt.
- [9
-
- <./figures//virus.JPEG>]
 <figures//sano.jpeg, id=354, 337.26pt x 92.5056pt>
 File: figures//sano.jpeg Graphic file (type jpg)
 <use figures//sano.jpeg>
-Package pdftex.def Info: figures//sano.jpeg  used on input line 268.
+Package pdftex.def Info: figures//sano.jpeg  used on input line 269.
 (pdftex.def)             Requested size: 290.74263pt x 79.74805pt.
  [10
 
@@ -978,7 +978,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 <figures//pneumonia model.png, id=419, 1946.472pt x 637.1805pt>
 File: figures//pneumonia model.png Graphic file (type png)
 <use figures//pneumonia model.png>
-Package pdftex.def Info: figures//pneumonia model.png  used on input line 305.
+Package pdftex.def Info: figures//pneumonia model.png  used on input line 306.
 (pdftex.def)             Requested size: 290.74263pt x 95.17432pt.
  [12
 
@@ -986,15 +986,15 @@ Package pdftex.def Info: figures//pneumonia model.png  used on input line 305.
 <figures//convoluzione.PNG, id=452, 587.19376pt x 252.34274pt>
 File: figures//convoluzione.PNG Graphic file (type png)
 <use figures//convoluzione.PNG>
-Package pdftex.def Info: figures//convoluzione.PNG  used on input line 341.
+Package pdftex.def Info: figures//convoluzione.PNG  used on input line 342.
 (pdftex.def)             Requested size: 145.3713pt x 62.46945pt.
 <figures//pooling-ex.PNG, id=453, 574.5465pt x 282.45525pt>
 File: figures//pooling-ex.PNG Graphic file (type png)
 <use figures//pooling-ex.PNG>
-Package pdftex.def Info: figures//pooling-ex.PNG  used on input line 341.
+Package pdftex.def Info: figures//pooling-ex.PNG  used on input line 342.
 (pdftex.def)             Requested size: 203.51895pt x 100.05466pt.
 
-Overfull \vbox (17.77335pt too high) detected at line 341
+Overfull \vbox (17.77335pt too high) detected at line 342
  []
 
 [13
@@ -1137,125 +1137,71 @@ Package pdftex.def Info: figures//alzheimer.jpg  used on input line 645.
 
  <./figures//alzheimer.jpg>] [29
 
+] [30
+
 ]
-<figures//conf-matrix-first.png, id=1010, 736.7525pt x 448.67625pt>
+<figures//conf-matrix-first.png, id=1041, 736.7525pt x 448.67625pt>
 File: figures//conf-matrix-first.png Graphic file (type png)
 <use figures//conf-matrix-first.png>
-Package pdftex.def Info: figures//conf-matrix-first.png  used on input line 657.
-(pdftex.def)             Requested size: 261.66658pt x 159.34622pt.
- [30
-
- <./figures//conf-matrix-first.png>]
-<figures//conf-matrix-alex.png, id=1043, 736.7525pt x 448.67625pt>
-File: figures//conf-matrix-alex.png Graphic file (type png)
-<use figures//conf-matrix-alex.png>
-Package pdftex.def Info: figures//conf-matrix-alex.png  used on input line 665.
+Package pdftex.def Info: figures//conf-matrix-first.png  used on input line 666.
 (pdftex.def)             Requested size: 261.66658pt x 159.34622pt.
  [31
 
- <./figures//conf-matrix-alex.png>]
-<figures//conf-matrix-pretrained.png, id=1077, 824.07875pt x 448.67625pt>
-File: figures//conf-matrix-pretrained.png Graphic file (type png)
-<use figures//conf-matrix-pretrained.png>
-Package pdftex.def Info: figures//conf-matrix-pretrained.png  used on input line 674.
-(pdftex.def)             Requested size: 290.74263pt x 158.29874pt.
+ <./figures//conf-matrix-first.png>]
+<figures//conf-matrix-alex.png, id=1075, 736.7525pt x 448.67625pt>
+File: figures//conf-matrix-alex.png Graphic file (type png)
+<use figures//conf-matrix-alex.png>
+Package pdftex.def Info: figures//conf-matrix-alex.png  used on input line 674.
+(pdftex.def)             Requested size: 261.66658pt x 159.34622pt.
  [32
 
+ <./figures//conf-matrix-alex.png>]
+<figures//conf-matrix-pretrained.png, id=1108, 824.07875pt x 448.67625pt>
+File: figures//conf-matrix-pretrained.png Graphic file (type png)
+<use figures//conf-matrix-pretrained.png>
+Package pdftex.def Info: figures//conf-matrix-pretrained.png  used on input line 683.
+(pdftex.def)             Requested size: 290.74263pt x 158.29874pt.
+ [33
+
  <./figures//conf-matrix-pretrained.png>]
-<figures//ofuf.png, id=1110, 429.605pt x 118.4425pt>
+<figures//ofuf.png, id=1141, 429.605pt x 118.4425pt>
 File: figures//ofuf.png Graphic file (type png)
 <use figures//ofuf.png>
-Package pdftex.def Info: figures//ofuf.png  used on input line 688.
+Package pdftex.def Info: figures//ofuf.png  used on input line 697.
 (pdftex.def)             Requested size: 203.51895pt x 56.11075pt.
-<figures//ofufkeras.png, id=1111, 642.4pt x 489.83pt>
+<figures//ofufkeras.png, id=1142, 642.4pt x 489.83pt>
 File: figures//ofufkeras.png Graphic file (type png)
 <use figures//ofufkeras.png>
-Package pdftex.def Info: figures//ofufkeras.png  used on input line 688.
+Package pdftex.def Info: figures//ofufkeras.png  used on input line 697.
 (pdftex.def)             Requested size: 203.51895pt x 155.17921pt.
 
-Overfull \vbox (7.88084pt too high) detected at line 688
+Overfull \vbox (7.88084pt too high) detected at line 697
  []
 
-[33
+[34
 
  <./figures//ofuf.png> <./figures//ofufkeras.png (PNG copy)>]
-\openout4 = `Presentazione.vrb'.
-
- (Presentazione.vrb
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 8.
- ("D:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd"
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-<figures//feature extractors.png, id=1144, 1154.3125pt x 81.30376pt>
-File: figures//feature extractors.png Graphic file (type png)
-<use figures//feature extractors.png>
-Package pdftex.def Info: figures//feature extractors.png  used on input line 20.
-(pdftex.def)             Requested size: 348.89026pt x 24.57367pt.
-
-Overfull \hbox (58.14763pt too wide) in paragraph at lines 20--21
- [] 
- []
-
-) [34
-
- <./figures//feature extractors.png>]
-<figures//ann-flow-chart.png, id=1178, 586.19pt x 656.4525pt>
-File: figures//ann-flow-chart.png Graphic file (type png)
-<use figures//ann-flow-chart.png>
-Package pdftex.def Info: figures//ann-flow-chart.png  used on input line 736.
-(pdftex.def)             Requested size: 159.90933pt x 179.06757pt.
- [35
-
- <./figures//ann-flow-chart.png (PNG copy)>]
-\openout4 = `Presentazione.vrb'.
-
- (Presentazione.vrb)
-Overfull \vbox (20.19092pt too high) detected at line 764
- []
-
-[36
-
-]
-<figures//roc-pneumonia-no-aug.png, id=1241, 395.4775pt x 279.0425pt>
+<figures//roc-pneumonia-no-aug.png, id=1175, 395.4775pt x 279.0425pt>
 File: figures//roc-pneumonia-no-aug.png Graphic file (type png)
 <use figures//roc-pneumonia-no-aug.png>
-Package pdftex.def Info: figures//roc-pneumonia-no-aug.png  used on input line 777.
-(pdftex.def)             Requested size: 145.3713pt x 102.57137pt.
-<figures//roc-pneumonia-aug.png, id=1242, 395.4775pt x 279.0425pt>
+Package pdftex.def Info: figures//roc-pneumonia-no-aug.png  used on input line 714.
+(pdftex.def)             Requested size: 116.29527pt x 82.05708pt.
+<figures//roc-pneumonia-aug.png, id=1176, 395.4775pt x 279.0425pt>
 File: figures//roc-pneumonia-aug.png Graphic file (type png)
 <use figures//roc-pneumonia-aug.png>
-Package pdftex.def Info: figures//roc-pneumonia-aug.png  used on input line 777.
-(pdftex.def)             Requested size: 145.3713pt x 102.57137pt.
-
-Overfull \vbox (15.33362pt too high) detected at line 777
- []
-
-[37
+Package pdftex.def Info: figures//roc-pneumonia-aug.png  used on input line 714.
+(pdftex.def)             Requested size: 116.29527pt x 82.05708pt.
+ [35
 
  <./figures//roc-pneumonia-no-aug.png> <./figures//roc-pneumonia-aug.png>]
-<figures//history-pneumonia-no-aug.png, id=1277, 489.027pt x 179.4705pt>
+<figures//history-pneumonia-no-aug.png, id=1209, 489.027pt x 179.4705pt>
 File: figures//history-pneumonia-no-aug.png Graphic file (type png)
 <use figures//history-pneumonia-no-aug.png>
-Package pdftex.def Info: figures//history-pneumonia-no-aug.png  used on input line 793.
-(pdftex.def)             Requested size: 290.74263pt x 106.70547pt.
- [38
+Package pdftex.def Info: figures//history-pneumonia-no-aug.png  used on input line 730.
+(pdftex.def)             Requested size: 261.66658pt x 96.03355pt.
+ [36
 
- <./figures//history-pneumonia-no-aug.png>] [39
-
-]
-<figures//dropout.PNG, id=1341, 499.8675pt x 190.91325pt>
-File: figures//dropout.PNG Graphic file (type png)
-<use figures//dropout.PNG>
-Package pdftex.def Info: figures//dropout.PNG  used on input line 828.
-(pdftex.def)             Requested size: 290.74263pt x 111.04729pt.
- [40
-
- <./figures//dropout.PNG>]
-\openout4 = `Presentazione.vrb'.
-
- (Presentazione.vrb) [41
-
-]
+ <./figures//history-pneumonia-no-aug.png>]
 \tf@nav=\write6
 \openout6 = `Presentazione.nav'.
 
@@ -1267,20 +1213,20 @@ Package pdftex.def Info: figures//dropout.PNG  used on input line 828.
 
  (Presentazione.aux)
 Package rerunfilecheck Info: File `Presentazione.out' has not changed.
-(rerunfilecheck)             Checksum: 43E9EC029D863E66D601E5B5214ADDCB;299.
+(rerunfilecheck)             Checksum: 57E70F809D29AADE5264E2E24D09E5E6;299.
  ) 
 Here is how much of TeX's memory you used:
- 21393 strings out of 480236
- 395773 string characters out of 2890434
- 1104643 words of memory out of 3000000
- 37299 multiletter control sequences out of 15000+200000
- 544096 words of font info for 60 fonts, out of 3000000 for 9000
+ 21290 strings out of 480236
+ 393540 string characters out of 2890434
+ 916463 words of memory out of 3000000
+ 37219 multiletter control sequences out of 15000+200000
+ 543458 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 111i,16n,112p,1121b,1455s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0600.pk><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Presentazione.pdf (41 pages, 4793365 bytes).
+ 111i,16n,112p,1121b,1413s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Presentazione.pdf (36 pages, 4585145 bytes).
 PDF statistics:
- 1460 PDF objects out of 1728 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
- 298 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1289 PDF objects out of 1440 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

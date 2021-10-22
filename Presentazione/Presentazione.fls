@@ -1076,6 +1076,14 @@ INPUT .\figures\\imaging.png
 INPUT .\figures\\imaging.png
 INPUT .\figures\\imaging.png
 INPUT .\figures\\imaging.png
+INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
+INPUT .\figures\\virus.JPEG
+INPUT .\figures\\virus.JPEG
+INPUT figures\\virus.JPEG
+INPUT .\figures\\virus.JPEG
+INPUT .\figures\\virus.JPEG
+INPUT .\figures\\virus.JPEG
+INPUT .\figures\\virus.JPEG
 INPUT .\figures\\learning.png
 INPUT .\figures\\learning.png
 INPUT figures\\learning.png
@@ -1113,7 +1121,6 @@ INPUT D:\Program Files\MiKTeX\tex\latex\sansmathaccent\ot1mathkerncmss.fd
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssi10.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssi8.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssi8.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmssi10.tfm
 INPUT .\figures\\confronto neurone biologico-artificiale.PNG
 INPUT .\figures\\confronto neurone biologico-artificiale.PNG
@@ -1192,13 +1199,6 @@ INPUT .\figures\jupyter e collab.png
 INPUT .\figures\jupyter e collab.png
 INPUT .\figures\jupyter e collab.png
 INPUT .\figures\jupyter e collab.png
-INPUT .\figures\\virus.JPEG
-INPUT .\figures\\virus.JPEG
-INPUT figures\\virus.JPEG
-INPUT .\figures\\virus.JPEG
-INPUT .\figures\\virus.JPEG
-INPUT .\figures\\virus.JPEG
-INPUT .\figures\\virus.JPEG
 INPUT .\figures\\sano.jpeg
 INPUT .\figures\\sano.jpeg
 INPUT figures\\sano.jpeg
@@ -1369,36 +1369,6 @@ INPUT .\figures\\ofufkeras.png
 INPUT .\figures\\ofufkeras.png
 INPUT .\figures\\ofufkeras.png
 INPUT .\figures\\ofufkeras.png
-OUTPUT Presentazione.vrb
-INPUT .\Presentazione.vrb
-INPUT Presentazione.vrb
-INPUT .\Presentazione.vrb
-INPUT Presentazione.vrb
-INPUT D:\Program Files\MiKTeX\tex\latex\base\ts1cmss.fd
-INPUT D:\Program Files\MiKTeX\tex\latex\base\ts1cmss.fd
-INPUT D:\Program Files\MiKTeX\tex\latex\base\ts1cmss.fd
-INPUT D:\Program Files\MiKTeX\tex\latex\base\ts1cmss.fd
-INPUT D:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcss0600.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
-INPUT .\figures\\feature extractors.png
-INPUT .\figures\\feature extractors.png
-INPUT figures\\feature extractors.png
-INPUT .\figures\\feature extractors.png
-INPUT .\figures\\feature extractors.png
-INPUT .\figures\\feature extractors.png
-INPUT .\figures\\feature extractors.png
-INPUT .\figures\\ann-flow-chart.png
-INPUT .\figures\\ann-flow-chart.png
-INPUT figures\\ann-flow-chart.png
-INPUT .\figures\\ann-flow-chart.png
-INPUT .\figures\\ann-flow-chart.png
-INPUT .\figures\\ann-flow-chart.png
-INPUT .\figures\\ann-flow-chart.png
-OUTPUT Presentazione.vrb
-INPUT .\Presentazione.vrb
-INPUT Presentazione.vrb
-INPUT .\Presentazione.vrb
-INPUT Presentazione.vrb
 INPUT .\figures\\roc-pneumonia-no-aug.png
 INPUT .\figures\\roc-pneumonia-no-aug.png
 INPUT figures\\roc-pneumonia-no-aug.png
@@ -1420,26 +1390,12 @@ INPUT .\figures\\history-pneumonia-no-aug.png
 INPUT .\figures\\history-pneumonia-no-aug.png
 INPUT .\figures\\history-pneumonia-no-aug.png
 INPUT .\figures\\history-pneumonia-no-aug.png
-INPUT .\figures\\dropout.PNG
-INPUT .\figures\\dropout.PNG
-INPUT figures\\dropout.PNG
-INPUT .\figures\\dropout.PNG
-INPUT .\figures\\dropout.PNG
-INPUT .\figures\\dropout.PNG
-INPUT .\figures\\dropout.PNG
-OUTPUT Presentazione.vrb
-INPUT .\Presentazione.vrb
-INPUT Presentazione.vrb
-INPUT .\Presentazione.vrb
-INPUT Presentazione.vrb
 OUTPUT Presentazione.nav
 OUTPUT Presentazione.toc
 OUTPUT Presentazione.snm
 INPUT Presentazione.aux
 INPUT .\Presentazione.out
 INPUT .\Presentazione.out
-INPUT C:\Users\franc\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcss0600.pk
-INPUT C:\Users\franc\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcss0600.pk
 INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmss12.pfb

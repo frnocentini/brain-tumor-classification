@@ -1,7 +1,7 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\beamer@sectionintoc {1}{Premessa}{3}{0}{1}
-\beamer@sectionintoc {2}{L'obiettivo}{9}{0}{2}
+\beamer@sectionintoc {1}{L'obiettivo}{3}{0}{1}
+\beamer@sectionintoc {2}{Premessa}{5}{0}{2}
 \beamer@sectionintoc {3}{Rilevazione della polmonite su radiografie}{10}{0}{3}
 \beamer@sectionintoc {4}{Classificazione di RM all'encefalo}{18}{0}{4}
 \beamer@sectionintoc {5}{Conclusioni e sviluppi futuri}{28}{0}{5}

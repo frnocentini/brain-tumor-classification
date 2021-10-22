@@ -68,8 +68,8 @@ per la classificazione di immagini biomedicali}
 	\frametitle{Indice}
 	\tableofcontents
 \end{frame}
-\section{Premessa}
 
+\section{L'obiettivo}
 \begin{frame}
 	\frametitle{AI come strumento per automatizzare l'elaborazione di grandi volumi di immagini mediche
 	}
@@ -87,6 +87,27 @@ per la classificazione di immagini biomedicali}
 \end{frame}
 
 
+
+\begin{frame}
+	\frametitle{Realizzazione del sistema di classificazione}
+	L’obiettivo del lavoro svolto e stato quello di utilizzare dei Dataset di immagini
+	biomedicali per allenare una rete neurale convoluzionale il cui scopo è la
+	classificazione delle patologie di interesse.
+	L'esperienza può essere suddivisa in 2 parti:
+	\begin{enumerate}
+		\item classificazione di raggi-X per la rilevazione della \textbf{polmonite};
+		\item uso di RM per la classificazione multipla di \textbf{tumori all'encefalo}.
+	\end{enumerate}
+	\begin{figure}
+		\includegraphics[width=0.65\textwidth]{virus.JPEG}
+		
+	\end{figure}
+
+\end{frame}
+	 %Lo scopo degli algoritmi utilizzati in questa esperienza è quello di sistemare i pesi della rete
+	 % in modo da minimizzare tale funzione. 
+
+	 \section{Premessa}
 \begin{frame}
 	\frametitle{L'uso delle tecniche di Deep Learning per l'apprendimento automatico
 	}
@@ -228,27 +249,7 @@ per la classificazione di immagini biomedicali}
 \end{frame}
 
 
-\section{L'obiettivo}
-\begin{frame}
-	\frametitle{Realizzazione del sistema di classificazione}
-	L’obiettivo del lavoro svolto e stato quello di utilizzare dei Dataset di immagini
-	biomedicali per allenare una rete neurale convoluzionale il cui scopo è la
-	classificazione delle patologie di interesse.
-	L'esperienza può essere suddivisa in 2 parti:
-	\begin{enumerate}
-		\item classificazione di raggi-X per la rilevazione della \textbf{polmonite};
-		\item uso di RM per la classificazione multipla di \textbf{tumori all'encefalo}.
-	\end{enumerate}
-	\begin{figure}
-		\includegraphics[width=0.65\textwidth]{virus.JPEG}
-		
-	\end{figure}
-
-
-	 %Lo scopo degli algoritmi utilizzati in questa esperienza è quello di sistemare i pesi della rete
-	 % in modo da minimizzare tale funzione. 
 	
-\end{frame}
 \section{Rilevazione della polmonite su radiografie}
 \begin{frame}
 	\frametitle{Il dataset}
@@ -340,7 +341,6 @@ Come strato di sottocampionamento è stato utilizzato il \textbf{Max-Pooling}.
 	
 \end{frame}
 
-		
 	
 
 
@@ -646,6 +646,15 @@ Si utilizzano le seguenti label:
 
 
 \begin{frame}
+	\centering
+	\bigskip
+	Grazie per l'attenzione.
+		
+	
+\end{frame}		
+
+
+\begin{frame}
 
 \end{frame}
 
@@ -688,91 +697,19 @@ Si utilizzano le seguenti label:
 \end{frame}
 
 
-\begin{frame}[fragile]
-	\frametitle{Definizione e compilazione del modello tramite le classi Keras}
-
-\begin{lstlisting}[basicstyle=\tiny, language=Python, numbers = none]
-	cnn = Sequential()
-	cnn.add(Conv2D(hyper_featuremaps, (3, 3), activation="relu", input_shape=(img_width, img_height, hyper_channels)))
-	cnn.add(MaxPooling2D(pool_size = (2, 2)))
-	...
-	cnn.add(Conv2D(hyper_featuremaps * 2, (3, 3), activation="relu", input_shape=(img_width, img_height, hyper_channels)))
-	cnn.add(MaxPooling2D(pool_size = (2, 2)))
-	...
-	cnn.add(Flatten())
-	cnn.add(Dense(activation = 'relu', units = 128))
-	cnn.add(Dense(activation = 'relu', units = 64))
-	cnn.add(Dense(activation = 'sigmoid', units = 1))
-	cnn.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
-\end{lstlisting}
 
 
-\begin{figure}
-	\includegraphics[width=1.2\textwidth]{feature extractors.png}
-\end{figure}
-
-\end{frame}
-
-
-
-\begin{frame}
-	\frametitle{ }
-	
-	\begin{columns}
-		\column{0.55\textwidth}
-		\begin{figure}
-			\includegraphics[width=\textwidth]{ann-flow-chart.png}
-			% https://www.postdicom.com/it/blog/handling-dicom-medical-imaging-data
-		\end{figure}
-		\column{0.45\textwidth}
-		In generale un algoritmo di apprendimento feed-forward consta di 2 fasi: 
-\begin{enumerate}
-   \item FEED-FORWARD 
-   \item BACK-PROPAGATION
-\end{enumerate} 
-	\end{columns}
-
-	
-\end{frame}
-
-
-\begin{frame}[fragile]
-	\frametitle{Fitting del modello}
-	La tupla \textbf{train = (X\_train, y\_train)} generata è stata data in pasto alla rete
-	 a gruppi di immagini pari alla \lstinline[language = Python]{batch_size}.
-	Tutto il dataset è stato rivisitato interamente un numero di volte pari a \lstinline[language = Python]{epochs}.
-	La metrica utilizzata è l'\textbf{accuratezza}. %accuracy is the fraction of 
-	%predictions our model got right
-	\begin{lstlisting}[basicstyle=\tiny, language=Python, numbers = none]
-		history = cnn.fit(train,epochs=20, validation_data=valid, class_weight=cw, callbacks=callbacks_list)
-		
-	\end{lstlisting}
-Output estrapolato da uno dei training eseguiti sul set ampliato:
-\smallskip
-\begin{lstlisting}[basicstyle=\tiny, numbers = none]
-Epoch 1/20
-524/524 [==============================] - 205s 329ms/step - loss: 0.4091 - accuracy: 0.7891 - val_loss: 0.4192 - val_accuracy: 0.8183
-
-Epoch 00001: val_accuracy improved from -inf to 0.81827
-
-Epoch 2/20
-524/524 [==============================] - 174s 332ms/step - loss: 0.2235 - accuracy: 0.9086 - val_loss: 0.2181 - val_accuracy: 0.9144
-
-Epoch 00002: val_accuracy improved from 0.81827 to 0.91442
-...
-\end{lstlisting}
-\end{frame}
 
 
 \begin{frame}
 	\frametitle{Receiver Operating Characteristic}
-	Si mostrano le curve \textbf{ROC} e le relative \textbf{AUC} nei due casi:
+	Si mostrano le curve \textbf{ROC} e le relative \textbf{AUC} per la prima esperienza:
 	\begin{figure}
-		\includegraphics[width=0.5\textwidth]{roc-pneumonia-no-aug.png}
+		\includegraphics[width=0.4\textwidth]{roc-pneumonia-no-aug.png}
 	\end{figure}
 
 \begin{figure}
-	\includegraphics[width=0.5\textwidth]{roc-pneumonia-aug.png}
+	\includegraphics[width=0.4\textwidth]{roc-pneumonia-aug.png}
 \end{figure}	
 \end{frame}
 
@@ -786,58 +723,61 @@ Epoch 00002: val_accuracy improved from 0.81827 to 0.91442
 	\end{enumerate}
 
 	\begin{figure}
-		\includegraphics[width=1\textwidth]{history-pneumonia-no-aug.png}
+		\includegraphics[width=0.9\textwidth]{history-pneumonia-no-aug.png}
 	\end{figure}
 
 	
 \end{frame}
 
-\begin{frame}
-	\frametitle{Conclusioni}
-	In sostanza ciò che ha permesso di ottenere un buon modello senza andare in underfitting
-	e overfitting è stato:
-	\begin{itemize}
-		\item un buon dataset;
-		\item l'uso dell'\textbf{image augmentation};
-		\item dei buoni iperparametri;
-		\item un modello semplice ma equilibrato rispetto alle dimensioni del dataset;
-		\item l'uso della funzione \textbf{EarlyStopping()}.
-	\end{itemize}
+%\begin{frame}
+%	\frametitle{Conclusioni}
+%	In sostanza ciò che ha permesso di ottenere un buon modello senza andare in underfitting
+%	e overfitting è stato:
+%	\begin{itemize}
+%		\item un buon dataset;
+%		\item l'uso dell'\textbf{image augmentation};
+%		\item dei buoni iperparametri;
+%		\item un modello semplice ma equilibrato rispetto alle dimensioni del dataset;
+%		\item l'uso della funzione \textbf{EarlyStopping()}.
+%	\end{itemize}
 	
-\end{frame}
+%\end{frame}
 
 
-\begin{frame}
-	\frametitle{Dropout e BatchNormalization per evitare overfitting}
-		Buona norma è quella di ridimensionare la rete neurale leggermente in eccesso utilizzando il \textbf{Dropout},
-		che permette di evitare attivazioni nascoste che potrebbero portare a overfitting. \\
-		%Di solito questo viene posizionato tra gli strati densi e così èè stato fatto con AlexNet
-		\begin{figure}
-			\includegraphics[width=1\textwidth]{dropout.PNG}
-		\end{figure}
-		Inoltre è possibile dar maggior robustezza con strati di \textbf{BatchNormalization}.
-		La normalizzazione batch scala gli output dei livelli della CNN in modo che abbiano media 0 e varianza 1.\\
+%\begin{frame}
+%	\frametitle{Dropout e BatchNormalization per evitare overfitting}
+%		Buona norma è quella di ridimensionare la rete neurale leggermente in eccesso utilizzando il \textbf{Dropout},
+%		che permette di evitare attivazioni nascoste che potrebbero portare a overfitting. \\
+%		%Di solito questo viene posizionato tra gli strati densi e così èè stato fatto con AlexNet
+%		\begin{figure}
+%			\includegraphics[width=1\textwidth]{dropout.PNG}
+%		\end{figure}
+%		Inoltre è possibile dar maggior robustezza con strati di \textbf{BatchNormalization}.
+		%La normalizzazione batch scala gli output dei livelli della CNN in modo 
+		%che abbiano media 0 e varianza 1.\\
 		% Gli output vengono ridimensionati in modo da addestrare la rete più 
 		%velocemente. Riduce anche i problemi dovuti a una scarsa inizializzazione
 		% dei parametri.
-		%Normalizzare i dati uniforma la varianza e la dev std così che la funzione di costo da minimizzare
-		%sia più simmetrica e sia possibile utilizzare un learning rate più grande così da apprendere più velocemente
+		%Normalizzare i dati uniforma la varianza e la dev std così che la
+		% funzione di costo da minimizzare
+		%sia più simmetrica e sia possibile utilizzare un learning rate 
+		%più grande così da apprendere più velocemente
 		%è una tecnica di regolarizzazione così come il dropout
 		%fa decrescere l'importanza di come sono stati inizializzati i pesi
 		%si normalizza sottraendo il valor medio e dividendo per la std dev
-	\end{frame}
+%	\end{frame}
 
 
 
-	\begin{frame}[fragile]
-		\frametitle{Creazione dei set di training e testing}
-		Dopo aver letto e ridimensionato tutte le immagini, queste vengono inserite nel
-		Numpy array \textbf{X\_train} associate alla label corrispodente in \textbf{y\_train} 
-		codificata in codice \textbf{one-hot}.
-		L'utilizzo della funzione \lstinline{train_test_split()} ha permesso di creare 
-		un set di testing che fosse il 10\%  di quello di training.\\
-		Per ogni coppia \textbf{(X\_train, y\_train)} sono stati eseguiti 5 training per ciascun modello.
-		\end{frame}
+%	\begin{frame}[fragile]
+%		\frametitle{Creazione dei set di training e testing}
+%		Dopo aver letto e ridimensionato tutte le immagini, queste vengono inserite nel
+%		Numpy array \textbf{X\_train} associate alla label corrispodente in \textbf{y\_train} 
+%		codificata in codice \textbf{one-hot}.
+%		L'utilizzo della funzione \lstinline{train_test_split()} ha permesso di creare 
+%		un set di testing che fosse il 10\%  di quello di training.\\
+%		Per ogni coppia \textbf{(X\_train, y\_train)} sono stati eseguiti 5 training per ciascun modello.
+%		\end{frame}
 		
 
 
